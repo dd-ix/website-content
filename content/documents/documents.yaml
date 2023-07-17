@@ -1,0 +1,27 @@
+de:
+  - name: Satzung
+    description: Die Satzung des DD - IX.
+    filename: satzung.pdf
+  - name: Code of Conduct
+    description: Der Code of Conduct des DD - IX.
+    filename: code_of_conduct_de.pdf
+  - name: Beitragsordnung
+    description: Die Beitragsordnung des DD - IX.
+    filename: beitragsordnung.pdf
+  - name: Mitgliedsantrag
+    description: Der Mitgliedsantrag des DD-IX.
+    filename: mitgliedsantrag.pdf
+en:
+  - name: Bylaws
+    description: The Bylaws of DD - IX.
+    filename: satzung.pdf
+  - name: Code of Conduct
+    description: The Code of Conduct of DD - IX.
+    filename: code_of_conduct_de.pdf
+  - name: Membership Fee Scale
+    description: The Membership Fee Scale of DD - IX.
+    filename: beitragsordnung.pdf
+  - name: Application for Membership
+    description: The Application for Membership of DD - IX.
+    filename: mitgliedsantrag.pdf
+
