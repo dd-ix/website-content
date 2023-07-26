@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  presence:
+    image: ghcr.io/dd-ix/presence:edge
+    restart: always
+    network_mode: host
+
+  foundation:
+    image: ghcr.io/dd-ix/foundation:edge
+    restart: always
+    network_mode: host
+    volumes:
+      - "./content:/content:ro"
