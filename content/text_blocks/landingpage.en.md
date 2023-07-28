@@ -2,6 +2,8 @@
 
 _English Landingpage_
 
+![Skyline of Dresden](dd-skyline.jpg)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Scelerisque mauris pellentesque pulvinar pellentesque. Eros in cursus turpis massa tincidunt dui ut. Non nisi
 est sit amet facilisis magna. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Diam vulputate ut pharetra
