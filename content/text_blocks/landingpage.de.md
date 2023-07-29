@@ -1,16 +1,22 @@
-# Keep Local Traffic Local.
+![Skyline of Dresden](dd-skyline.jpg)
 
-_Deutsche Startseite_
+# Internet-Knoten
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Scelerisque mauris pellentesque pulvinar pellentesque. Eros in cursus turpis massa tincidunt dui ut. Non nisi
-est sit amet facilisis magna. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Diam vulputate ut pharetra
-sit amet aliquam id diam. Quam elementum pulvinar etiam non quam. Malesuada fames ac turpis egestas integer eget. Risus
-nullam eget felis eget nunc lobortis. Sollicitudin nibh sit amet commodo nulla facilisi. Fringilla phasellus faucibus
-scelerisque eleifend donec pretium vulputate.
+Der DD-IX ist Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen
+Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom
+geographischen Mittelpunkt Sachsens entfernt bieten die DD-IX Standorte in Dresden die ideale Vorraussetzung
+um sich mit den Teilnehmern in der Region zu vernetzen.
 
-Semper eget duis at tellus at urna condimentum mattis. Pretium quam vulputate dignissim suspendisse in est. Tristique
-risus nec feugiat in. Integer quis auctor elit sed vulputate mi sit. Nibh venenatis cras sed felis eget. Enim nulla
-aliquet porttitor lacus luctus accumsan tortor posuere ac. Et malesuada fames ac turpis egestas. Feugiat nisl pretium
-fusce id velit ut tortor. Non pulvinar neque laoreet suspendisse. Ut placerat orci nulla pellentesque dignissim enim
-sit. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ante in nibh mauris cursus mattis molestie a.
+
+# Verein
+
+Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. Unsere Mission ist es eine
+Basis für den direkten Austausch des Internet-Verkehrs zwischen Quelle und Ziel zu schaffen. Das Internet
+lebt von einem dezentraler Vermaschung zwischen den Providern welche vor allem durch IXPs effizient ermöglicht
+wird. Durch sie kann der Internet-Verkehr auf dem ökonimisch und ökologisch besten Weg ausgetauscht werden.
+
+
+# Unterstützung
+
+Ob als Sponsor oder durch Eintritt in den Verein, begleite uns bei der Entwicklung des DD-IX – dem Katalysator für
+die digitale Zukunft in der Region!
