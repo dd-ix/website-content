@@ -1,4 +1,4 @@
-![Skyline of Dresden](dd-skyline.jpg)
+![Skyline of Dresden](dd-skyline.webp)
 
 # Internet Exchange
 

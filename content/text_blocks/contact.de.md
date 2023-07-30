@@ -27,4 +27,4 @@ Tübinger Str. 10 (RoboLAB)
 
 01189 Dresden
 
-[![OpenStreetMap](osm-office.jpg)](https://www.openstreetmap.org/way/498034035)
+[![OpenStreetMap](osm-office.webp)](https://www.openstreetmap.org/way/498034035)
