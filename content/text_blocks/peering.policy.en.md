@@ -25,7 +25,6 @@ the following requirements for participation:
 - peers must only engage in legal activities that comply with German jurisdiction
 - peers are responsible for fulfilling the technical requirements for participation
 
-
 ## Peering Application
 
 The following information must be provided for a peering application:
@@ -34,7 +33,6 @@ The following information must be provided for a peering application:
 - acceptance of this policy
 - acceptance of the payment terms
 - proof of legal existence
-
 
 ## Peering Costs
 
@@ -87,7 +85,6 @@ technical requirements must also be met by each peer:
 - peers are encouraged to peer with the DD-IX router servers
 - peers are encouraged to apply strict router filters
 
-
 ## Router Servers
 
 Two distributed router servers are available in the peering broadcast domain.
@@ -104,7 +101,6 @@ conditions:
 - PNIs are setup between two network ports using 802.1Q tagging
 - only a single static MAC-address per 802.1Q tag is allowed to be used on a port 
 - peers agree on their own routing and peering policy
-
 
 ## Consulting
 
