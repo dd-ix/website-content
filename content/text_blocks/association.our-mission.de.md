@@ -1,15 +1,15 @@
-# Unsere Mission
+# Unsere Vision
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Id velit ut tortor pretium viverra suspendisse potenti nullam. Amet venenatis urna cursus eget nunc scelerisque
-viverra mauris in. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Id cursus metus aliquam eleifend.
-Turpis tincidunt id aliquet risus feugiat. Accumsan lacus vel facilisis volutpat. Viverra mauris in aliquam sem
-fringilla ut morbi tincidunt augue. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Scelerisque
-felis imperdiet proin fermentum. Pellentesque habitant morbi tristique senectus.
+Wir wollen die Region Sachsen mit dem Schwerpunkt Dresden als attraktiven IT-Standort weiter voranbringen. Unser Hauptaugenmerk liegt in der Weiterentwicklung des Kommunikationsnetzes Internet. Um dieses Ziel zu erreichen, fokussieren wir uns gemeinnützig auf:
 
-Nec tincidunt praesent semper feugiat nibh sed. Quis auctor elit sed vulputate mi sit. Volutpat blandit aliquam etiam
-erat velit scelerisque in dictum non. Nunc sed blandit libero volutpat sed cras. Ut morbi tincidunt augue interdum velit
-euismod in. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Commodo sed egestas egestas
-fringilla phasellus faucibus scelerisque eleifend donec. Pellentesque pulvinar pellentesque habitant morbi tristique.
-Viverra vitae congue eu consequat ac felis donec et odio. Id aliquet risus feugiat in ante. Adipiscing diam donec
-adipiscing tristique risus nec feugiat in fermentum. Est ultricies integer quis auctor elit.
+## Vernetzung und Erfahrungsaustausch
+
+Wir stehen als objektiver Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.
+
+## Betrieb des DD-IX
+
+Neben der Unterstützung der Community betreiben wir den Internet-Exchange DD-IX an Standorten Dresden. Der DD-IX versteht sich als offene, nicht gewinnorientierte
+Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.
+
+Neben dem Peering LAN und unseren Route Server für den Kernbetrieb des IXP betreiben
+wir auch die weitere Technik für den Verein zu großen Teilen selbst.
