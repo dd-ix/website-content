@@ -1,18 +1,20 @@
-# Keep Local Traffic Local.
+![Skyline of Dresden](dd-skyline.webp)
 
-_English Landingpage_
+# Internet Exchange
 
-![Skyline of Dresden](dd-skyline.jpg)
+The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform
+we are open to all organizations and providers for the multilateral exchange of Internet traffic.
+Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal
+prerequisites to peer with participants in the region.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Scelerisque mauris pellentesque pulvinar pellentesque. Eros in cursus turpis massa tincidunt dui ut. Non nisi
-est sit amet facilisis magna. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Diam vulputate ut pharetra
-sit amet aliquam id diam. Quam elementum pulvinar etiam non quam. Malesuada fames ac turpis egestas integer eget. Risus
-nullam eget felis eget nunc lobortis. Sollicitudin nibh sit amet commodo nulla facilisi. Fringilla phasellus faucibus
-scelerisque eleifend donec pretium vulputate.
 
-Semper eget duis at tellus at urna condimentum mattis. Pretium quam vulputate dignissim suspendisse in est. Tristique
-risus nec feugiat in. Integer quis auctor elit sed vulputate mi sit. Nibh venenatis cras sed felis eget. Enim nulla
-aliquet porttitor lacus luctus accumsan tortor posuere ac. Et malesuada fames ac turpis egestas. Feugiat nisl pretium
-fusce id velit ut tortor. Non pulvinar neque laoreet suspendisse. Ut placerat orci nulla pellentesque dignissim enim
-sit. Risus nullam eget felis eget nunc lobortis mattis aliquam. Ante in nibh mauris cursus mattis molestie a.
+# Association
+
+The IXP is operated by passionately committed people within the DD-IX e.V. The DD-IX e.V. is a registered
+association under German law. Our mission is to create a basis for the direct exchange of internet traffic
+within the region. The Internet is based on decentralized networking between providers which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in a economically and ecologically optimal way.
+
+# Support
+
+Accompany us in the development of the DD-IX - the catalyst for the digital future in the region,
+whether as a sponsor or by joining the association!

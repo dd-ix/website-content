@@ -1,15 +1,15 @@
-# Our Mission
+# Our Vision
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Id velit ut tortor pretium viverra suspendisse potenti nullam. Amet venenatis urna cursus eget nunc scelerisque
-viverra mauris in. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Id cursus metus aliquam eleifend.
-Turpis tincidunt id aliquet risus feugiat. Accumsan lacus vel facilisis volutpat. Viverra mauris in aliquam sem
-fringilla ut morbi tincidunt augue. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Scelerisque
-felis imperdiet proin fermentum. Pellentesque habitant morbi tristique senectus.
+We want to promote Saxony as an attractive IT location with a focus on Dresden. Our main focus is the further expansion of the internet communication network. We committ as non-profit organisation for:
 
-Nec tincidunt praesent semper feugiat nibh sed. Quis auctor elit sed vulputate mi sit. Volutpat blandit aliquam etiam
-erat velit scelerisque in dictum non. Nunc sed blandit libero volutpat sed cras. Ut morbi tincidunt augue interdum velit
-euismod in. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Commodo sed egestas egestas
-fringilla phasellus faucibus scelerisque eleifend donec. Pellentesque pulvinar pellentesque habitant morbi tristique.
-Viverra vitae congue eu consequat ac felis donec et odio. Id aliquet risus feugiat in ante. Adipiscing diam donec
-adipiscing tristique risus nec feugiat in fermentum. Est ultricies integer quis auctor elit.
+## Networking and Sharing Experiences
+
+We are available as an objective point of contact for organizations, science, business and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.
+
+## Operation of the DD-IX
+
+In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden.
+DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the
+region of Saxony.
+
+Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.
