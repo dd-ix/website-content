@@ -6,11 +6,11 @@ technisch geprägt ist, engagieren wir uns auch in nicht-technischen Bereichen.
 
 Die Arbeit im Verein ist in verschiedenen Gremnien und Arbeitskreise organisiert:
 
-- Kunden & Sponsoring Akquise
-- Öffentlichkeitsarbeit
-- Technischer Betrieb & Beirat
-- Verantstaltungsmanagement
 - Vorstand
+- Technischer Betrieb
+- Öffentlichkeitsarbeit
+- Verantstaltungsmanagement
+- Kunden & Sponsoring Akquise
 
 ## Mitarbeit & Beitritt
 

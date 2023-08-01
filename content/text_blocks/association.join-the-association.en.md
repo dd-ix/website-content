@@ -6,11 +6,11 @@ through IXP operations we are also involved in non-technical areas.
 
 The work in the association is organized in different boards and working groups:
 
-- Customer & Sponsorship Acquisition
-- Event Management
 - Management Board
-- Public Relations
 - Technical Operation & Advisory Board
+- Public Relations
+- Event Management
+- Customer & Sponsorship Acquisition
 
 ## Participation & Joining
 
