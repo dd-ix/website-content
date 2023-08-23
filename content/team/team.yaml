@@ -1,0 +1,7 @@
+- name: "Max Musterman"
+  description:
+    de: "Lorem"
+    en: "Ipsum"
+  image: "test_img.webp"
+  socials:
+    website: "https://example.com"
