@@ -1,7 +1,10 @@
-- name: "Max Musterman"
+- name: "Tassilo Tanneberger"
   description:
-    de: "Lorem"
-    en: "Ipsum"
-  image: "test_img.webp"
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
   socials:
-    website: "https://example.com"
+    website: "https://tanneberger.me"
+    mastodon: "https://c3d2.social/@revol_xut"
+    github: "https://github.com/revol-xut/"
+    email: "tassilo@dd-ix.net"
