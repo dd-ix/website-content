@@ -1,8 +1,8 @@
 - nick: "revol-xut"
   name: "Tassilo Tanneberger"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     website: "https://tanneberger.me"
@@ -13,8 +13,8 @@
 - nick: "Melody"
   name: "soon"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     mastodon: "@melody@c3d2.social"
@@ -24,8 +24,8 @@
 - nick: "Fiasko"
   name: "Thomas Liske"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     mastodon: "@melody@c3d2.social"
@@ -34,8 +34,8 @@
 
 - name: "Matthias Wählisch"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     github: "mwaehlisch"
@@ -44,8 +44,8 @@
 - nick: "Vesper"
   name: "Thomas Kalz"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     mastodon: "@melody@c3d2.social"
@@ -55,16 +55,23 @@
 - nick: "Issi"
   name: "Ines Kalz"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     email: "ines.kalz@dd-ix.net"
 
 - name: "Sandra Zander"
   description:
-    de: "Gründer und Technik"
-    en: "Founder and Technical Person"
+    de: "Gründer"
+    en: "Founder"
   image: "tassilo.jpg"
   socials:
     email: "sandra.zander@dd-ix.net"
+
+- name: "Willhelm Böddinghaus"
+  description:
+    de: "Gründer"
+    en: "Founder"
+  image: "tassilo.jpg"
+  socials:
