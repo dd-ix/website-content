@@ -8,3 +8,30 @@
     mastodon: "@revol_xut@c3d2.social"
     github: "revol-xut"
     email: "tassilo@dd-ix.net"
+- name: "Melody"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    mastodon: "@melody@c3d2.social"
+    github: "neonwhiskers"
+    email: "melody@dd-ix.net"
+- name: "Thomas Liske"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    mastodon: "@melody@c3d2.social"
+    github: "liske"
+    email: "thomas.liske@dd-ix.net"
+- name: "Thomas Kalz"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    mastodon: "@melody@c3d2.social"
+    github: "liske"
+    email: "thomas.kalz@dd-ix.net"
