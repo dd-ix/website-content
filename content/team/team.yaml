@@ -5,6 +5,6 @@
   image: "tassilo.jpg"
   socials:
     website: "https://tanneberger.me"
-    mastodon: "https://c3d2.social/@revol_xut"
-    github: "https://github.com/revol-xut/"
+    mastodon: "@revol_xut@c3d2.social"
+    github: "revol-xut"
     email: "tassilo@dd-ix.net"
