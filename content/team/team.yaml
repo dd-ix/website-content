@@ -32,6 +32,15 @@
     github: "liske"
     email: "thomas.liske@dd-ix.net"
 
+- name: "Matthias Wählisch"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    github: "mwaehlisch"
+    email: "matthias.waehlisch@dd-ix.net"
+
 - nick: "Vesper"
   name: "Thomas Kalz"
   description:
@@ -42,3 +51,20 @@
     mastodon: "@melody@c3d2.social"
     github: "liske"
     email: "thomas.kalz@dd-ix.net"
+
+- nick: "Issi"
+  name: "Ines Kalz"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    email: "ines.kalz@dd-ix.net"
+
+- name: "Sandra Zander"
+  description:
+    de: "Gründer und Technik"
+    en: "Founder and Technical Person"
+  image: "tassilo.jpg"
+  socials:
+    email: "sandra.zander@dd-ix.net"
