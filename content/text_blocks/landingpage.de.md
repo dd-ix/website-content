@@ -12,7 +12,7 @@ um sich mit den Teilnehmern in der Region zu vernetzen.
 # Verein
 
 
-Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. Unsere Mission ist es, eine
+Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist es, eine
 Basis für den direkten Austausch des Internet-Verkehrs zwischen Quelle und Ziel zu schaffen. Das Internet
 lebt von einer dezentralen Vermaschung zwischen den Providern, die vor allem durch IXPs effizient ermöglicht
 wird. Neben der Erhöhung der Resilenz des Internets findet durch sie der Netzwerkverkehr auf dem ökonomisch und

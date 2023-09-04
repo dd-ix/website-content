@@ -21,7 +21,7 @@
 
 ## Anschrift
 
-DD-IX e.V.
+DD-IX e.V. i.G.
 
 Tübinger Str. 10 (RoboLAB)
 

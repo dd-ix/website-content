@@ -13,7 +13,7 @@ prerequisites to peer with participants in the region.
 # Association
 
 
-The IXP is operated by passionately committed people within the DD-IX e.V. The DD-IX e.V. is a registered
+The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. is a registered
 association under German law. Our mission is to create a basis for the direct exchange of internet traffic
 within the region. The Internet is based on decentralized networking between providers which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in a economically and ecologically optimal way.
 
