@@ -1,4 +1,5 @@
 - name: "Tassilo Tanneberger"
+  ripe_handle: "TASS5-RIPE"
   description:
     de: "Gründer"
     en: "Founder"
@@ -11,6 +12,7 @@
 
 - nick: "Melody"
   name: "soon"
+  ripe_handle: "MLDY1-RIPE"
   description:
     de: "Gründer"
     en: "Founder"
@@ -22,6 +24,7 @@
 
 - nick: "Fiasko"
   name: "Thomas Liske"
+  ripe_handle: "LISK3-RIPE"
   description:
     de: "Gründer"
     en: "Founder"
