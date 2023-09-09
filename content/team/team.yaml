@@ -22,15 +22,14 @@
     github: "neonwhiskers"
     email: "melody@dd-ix.net"
 
-- nick: "Fiasko"
-  name: "Thomas Liske"
+- name: "Thomas Liske"
   ripe_handle: "LISK3-RIPE"
   description:
     de: "Gründer"
     en: "Founder"
   image: "tassilo.jpg"
   socials:
-    mastodon: "@melody@c3d2.social"
+    mastodon: "@liske@ibh.social"
     github: "liske"
     email: "thomas.liske@dd-ix.net"
 
@@ -43,19 +42,15 @@
     github: "waehlisch"
     email: "matthias.waehlisch@dd-ix.net"
 
-- nick: "Vesper"
-  name: "Thomas Kalz"
+- name: "Thomas Kalz"
   description:
     de: "Gründer"
     en: "Founder"
   image: "tassilo.jpg"
   socials:
-    mastodon: "@melody@c3d2.social"
-    github: "liske"
     email: "thomas.kalz@dd-ix.net"
 
-- nick: "Issi"
-  name: "Ines Kalz"
+- name: "Ines Kalz"
   description:
     de: "Gründer"
     en: "Founder"
@@ -70,10 +65,3 @@
   image: "tassilo.jpg"
   socials:
     email: "sandra.zander@dd-ix.net"
-
-- name: "Willhelm Böddinghaus"
-  description:
-    de: "Gründer"
-    en: "Founder"
-  image: "tassilo.jpg"
-  socials:
