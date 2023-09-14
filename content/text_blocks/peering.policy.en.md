@@ -8,11 +8,11 @@ This policy governs the conditions and guidelines for peering at DD-IX.
 
 ## Introduction
 
-DD-IX is the internet exchange point for Dresden and all of Saxony. As a
-non-commercial and open platform, we are available to all organizations
-and providers for multilateral exchange of internet traffic.
+DD-IX is the Internet exchange point for Dresden and all of Saxony. As a
+non-commercial and open platform, we are available to all Internet
+stakeholders for multilateral exchange of Internet traffic.
 
-The IXP is operated by passionately committed people within the DD-IX e.V. i.G.
+The DD-IX is operated by committed people of the DD-IX e.V. i.G.
 The DD-IX e.V. i.G. is a registered association under German law.
 
 
@@ -23,16 +23,16 @@ the following requirements for participation:
 
 - peers must be legal entities
 - peers must only engage in legal activities that comply with German jurisdiction
-- peers are responsible for fulfilling the technical requirements for participation
+- peers are responsible for fulfilling the technical requirements for participation.
 
 ## Peering Application
 
-The following information must be provided for a peering application:
+The following information must be provided when applying for peering:
 
 - the completed peering application form
 - acceptance of this policy
 - acceptance of the payment terms
-- proof of legal existence
+- proof of legal existence.
 
 ## Peering Costs
 
@@ -49,9 +49,9 @@ ports at the discretion of the DD-IX.
 DD-IX provides a platform for exchanging network traffic, with peers responsible for:
 
 - their own routing and peering agreements with other peers
-- establish a optimal route selection and efficiently traffic routing
+- establishing a justified route selection and efficiently traffic routing
 - peering with the DD-IX route servers
-- security and integrity of their AS
+- security and integrity of their AS.
 
 DD-IX is operated with a lot of commitment for a continuous and trouble-free operation.
 However, as a non-commercial platform, no legal guarantee for service levels can be given.
@@ -64,7 +64,7 @@ at any time for the following important reasons:
 
 - for security and stability reasons
 - violation of the peering requirements
-- repeatedly outstanding payments
+- repeatedly outstanding payments.
 
 A peer may terminate its participation at any time. A refund of peering costs is generally excluded.
 
@@ -89,7 +89,7 @@ technical requirements must also be met by each peer:
 
 Two distributed router servers are available in the peering broadcast domain.
 All peers are encouraged to setup peering sessions to the route servers and
-announce their prefixes for a optimal meshing to the other peers.
+announce their prefixes for a optimal connectivity to the other peers.
 
 
 ## Private Network Interconnect
