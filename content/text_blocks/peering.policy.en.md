@@ -79,15 +79,15 @@ technical requirements must also be met by each peer:
 - peers must never route the peering prefix via IGP nor EGP
 - peers are only allowed to use assigned L3 addresses on the peering broadcast domain
 - peers must be authorized to announce at least one DFZ routable prefix that comply
-  with the filters of the DD-IX router servers
+  with the filters of the DD-IX route servers
 - peers must maintain IRRDB records
 - peers are encouraged to maintain a PeeringDB record
-- peers are encouraged to peer with the DD-IX router servers
-- peers are encouraged to apply strict router filters
+- peers are encouraged to peer with the DD-IX route servers
+- peers are encouraged to apply strict route filters
 
-## Router Servers
+## Route Servers
 
-Two distributed router servers are available in the peering broadcast domain.
+Two distributed route servers are available in the peering broadcast domain.
 All peers are encouraged to setup peering sessions to the route servers and
 announce their prefixes for a optimal meshing to the other peers.
 
