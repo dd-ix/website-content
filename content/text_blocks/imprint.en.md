@@ -2,36 +2,34 @@
 
 Angaben gemäß § 5 TMG
 
-c/o RoboLAB<br/>
-Tbinger Str. 10<br/>
-01189 Dresden<br/>
+DD-IX e.V. i.G.
+
+c/o RoboLAB
+
+Tübinger Str. 10
+
+01189 Dresden
+
 Germany
 
 ### Vertreten durch:
 Max Muster (todo)
 
 ### Kontakt:
-Telefon: +49 30 233219588<br/>
-Fax: todo<br/>
+Telefon: +49 30 233219588
+
 E-Mail: contact@dd-ix.net
 
-### Registereintrag:
-Eintragung im Registergericht: Musterstadt (todo)<br/>
-Registernummer: 12345 (todo)
-
-### Umsatzsteuer-ID:
-Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: Musterustid (todo).
-
-### Wirtschafts-ID:
-Musterwirtschaftsid (todo)
-
-### Aufsichtsbehörde:
-Musteraufsicht Musterstadt (todo)
-
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-Max Muster (todo)<br/>
-Musterweg (todo)<br/>
-12345 Musterstadt (todo)
+Tassilo Tanneberger
+
+c/o RoboLAB
+
+Tübinger Str. 10
+
+01189 Dresden
+
+Germany
 
 ### Haftungsausschluss:
 
@@ -57,4 +55,4 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 
 
 
-Website Impressum erstellt durch impressum-generator.de von der Kanzlei Hasselbach 
+Website Impressum erstellt durch [impressum-generator.de](https://www.impressum-generator.de) von der [Kanzlei Hasselbach, Frankfurt](https://www.kanzlei-hasselbach.de/standorte/frankfurt/)
