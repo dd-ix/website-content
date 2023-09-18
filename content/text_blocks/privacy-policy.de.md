@@ -18,19 +18,11 @@ III. Informationen zur Datenverarbeitung
 Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:
 
 DD-IX e.V. i.G.  
-Tassilo, Tanneberger  
 Tübinger Str. 10  
 01189 Dresden
 
 Telefon: +49 30 233219588  
 E-Mail: contact@dd-ix.net
-
-Datenschutzbeauftragte/r beim Anbieter ist:
-
-\[DSB – Vorname, Nachname\]  
-Telefon: \[DSB – Telefonnummer\]  
-E-Mail: \[DSB – E-Mail\] \[nachfolgende Angaben sind zu ergänzen, sofern ein Externer Datenschutzbeauftragter bestellt ist\] \[DSB-Extern – Straße, Hausnummer\]  
-\[DSB-Extern – Postleitzahl, Ort\]
 
 ### II. Rechte der Nutzer und Betroffenen
 

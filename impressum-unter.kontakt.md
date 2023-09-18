@@ -11,3 +11,25 @@ Musterwirtschaftsid (todo)
 
 ### Aufsichtsbehörde:
 Musteraufsicht Musterstadt (todo)
+
+
+
+-------------------------
+Datenschutzerklärung unter Kontakt
+
+Datenschutzbeauftragte/r beim Anbieter ist:
+
+\[DSB – Vorname, Nachname\]  
+Telefon: \[DSB – Telefonnummer\]  
+E-Mail: \[DSB – E-Mail\] \[nachfolgende Angaben sind zu ergänzen, sofern ein Externer Datenschutzbeauftragter bestellt ist\] \[DSB-Extern – Straße, Hausnummer\]  
+\[DSB-Extern – Postleitzahl, Ort\]
+
+
+The controller’s data protection officer is:
+
+\[DSB – Vorname, Nachname\]  
+Telefon: \[DSB – Telefonnummer\]  
+E-Mail: \[DSB – E-Mail\] \[The following information must be added if an external data protection officer has been appointed\].
+
+\[DSB-Extern – Straße, Hausnummer\]  
+\[DSB-Extern – Postleitzahl, Ort\]

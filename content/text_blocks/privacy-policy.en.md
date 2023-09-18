@@ -18,21 +18,11 @@ III. Information about the data processing
 The party responsible for this website (the „controller“) for purposes of data protection law is:
 
 DD-IX e.V. i.G.  
-Tassilo, Tanneberger  
 Tübinger Str. 10  
 01189 Dresden
 
 Telefon: +49 30 233219588  
 E-Mail: contact@dd-ix.net
-
-The controller’s data protection officer is:
-
-\[DSB – Vorname, Nachname\]  
-Telefon: \[DSB – Telefonnummer\]  
-E-Mail: \[DSB – E-Mail\] \[The following information must be added if an external data protection officer has been appointed\].
-
-\[DSB-Extern – Straße, Hausnummer\]  
-\[DSB-Extern – Postleitzahl, Ort\]
 
 ### II. The rights of users and data subjects
 
