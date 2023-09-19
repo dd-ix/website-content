@@ -6,11 +6,11 @@ de:
   - name: Code of Conduct DD-IX e.V. i.G.
     description: ''
     filename: DD-IX CoC DE.pdf
-    image: test_img.webp
+    image: DD-IX CoC DE.webp
   - name: Beitragsordnung DD-IX e.V. i.G.
     description: ''
     filename: DD-IX Beitragsordnung.pdf
-    image: test_img.webp
+    image: DD-IX Beitragsordnung.webp
   - name: Mitgliedsantrag DD-IX e.V. i.G.
     description: ''
     filename: DD-IX Mitgliedsantrag.pdf
@@ -23,11 +23,11 @@ en:
   - name: Code of Conduct DD-IX e.V. i.G.
     description: ''
     filename: DD-IX CoC EN.pdf
-    image: test_img.webp
+    image: DD-IX CoC EN.webp
   - name: Beitragsordnung DD-IX e.V. i.G.
     description: membership fee scale
     filename: DD-IX Beitragsordnung.pdf
-    image: test_img.webp
+    image: DD-IX Beitragsordnung.webp
   - name: Mitgliedsantrag DD-IX e.V. i.G.
     description: membership application form
     filename: DD-IX Mitgliedsantrag.pdf
