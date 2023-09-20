@@ -35,6 +35,7 @@
     email: "thomas.liske@dd-ix.net"
 
 - name: "Matthias Wählisch"
+  ripe_handle: "MW4568-RIPE"
   description:
     de: "Gründer"
     en: "Founder"
@@ -43,6 +44,7 @@
     github: "waehlisch"
     email: "matthias.waehlisch@dd-ix.net"
     linkedin: "matthiaswaehlisch"
+    website: "https://tu-dresden.de/cs/netd/about/mw"
 
 - name: "Thomas Kalz"
   description:
