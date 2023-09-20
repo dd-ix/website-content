@@ -52,14 +52,6 @@
   socials:
     email: "thomas.kalz@dd-ix.net"
 
-- name: "Ines Kalz"
-  description:
-    de: "Gründer"
-    en: "Founder"
-  image: "TBD.webp"
-  socials:
-    email: "ines.kalz@dd-ix.net"
-
 - name: "Sandra Zander"
   description:
     de: "Gründer"
@@ -68,3 +60,12 @@
   socials:
     email: "sandra.zander@dd-ix.net"
     linkedin: "sandra-zander"
+
+- name: "Ines Kalz"
+  description:
+    de: "Gründer"
+    en: "Founder"
+  image: "TBD.webp"
+  socials:
+    email: "ines.kalz@dd-ix.net"
+
