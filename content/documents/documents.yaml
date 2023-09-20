@@ -1,34 +1,34 @@
 de:
-  - name: Satzung Dresden Internet Exchange DD-IX e.V. i.G.
+  - name: Satzung DD-IX Dresden Internet Exchange e.V. i.G.
     description: ''
     filename: DD-IX Satzung.pdf
     image: test_img.webp
-  - name: Code of Conduct DD-IX e.V. i.G.
+  - name: Code of Conduct DD-IX Dresden Internet Exchange e.V. i.G.
     description: ''
     filename: DD-IX CoC DE.pdf
     image: DD-IX CoC DE.webp
-  - name: Beitragsordnung DD-IX e.V. i.G.
+  - name: Beitragsordnung DD-IX Dresden Internet Exchange e.V. i.G.
     description: ''
     filename: DD-IX Beitragsordnung.pdf
     image: DD-IX Beitragsordnung.webp
-  - name: Mitgliedsantrag DD-IX e.V. i.G.
+  - name: Mitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
     description: ''
     filename: DD-IX Mitgliedsantrag.pdf
     image: test_img.webp
 en:
-  - name: Satzung Dresden Internet Exchange DD-IX e.V. i.G.
+  - name: Satzung DD-IX Dresden Internet Exchange e.V. i.G.
     description: association statutes
     filename: DD-IX Satzung.pdf
     image: test_img.webp
-  - name: Code of Conduct DD-IX e.V. i.G.
+  - name: Code of Conduct DD-IX Dresden Internet Exchange e.V. i.G.
     description: ''
     filename: DD-IX CoC EN.pdf
     image: DD-IX CoC EN.webp
-  - name: Beitragsordnung DD-IX e.V. i.G.
+  - name: Beitragsordnung DD-IX Dresden Internet Exchange e.V. i.G.
     description: membership fee scale
     filename: DD-IX Beitragsordnung.pdf
     image: DD-IX Beitragsordnung.webp
-  - name: Mitgliedsantrag DD-IX e.V. i.G.
+  - name: Mitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
     description: membership application form
     filename: DD-IX Mitgliedsantrag.pdf
     image: test_img.webp
