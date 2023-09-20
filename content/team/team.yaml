@@ -3,7 +3,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Tassilo.jpg"
+  image: "Tassilo.webp"
   socials:
     website: "https://tanneberger.me"
     mastodon: "@revol_xut@c3d2.social"
@@ -16,7 +16,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Melody.jpg"
+  image: "Melody.webp"
   socials:
     mastodon: "@melody@c3d2.social"
     github: "neonwhiskers"
@@ -27,7 +27,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Fiasko.jpg"
+  image: "Fiasko.webp"
   socials:
     mastodon: "@liske@ibh.social"
     github: "liske"
@@ -37,7 +37,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Matthias.jpg"
+  image: "Matthias.webp"
   socials:
     github: "waehlisch"
     email: "matthias.waehlisch@dd-ix.net"
@@ -46,7 +46,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Vesper.jpg"
+  image: "Vesper.webp"
   socials:
     email: "thomas.kalz@dd-ix.net"
 
@@ -54,7 +54,7 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "TBD.jpg"
+  image: "TBD.webp"
   socials:
     email: "ines.kalz@dd-ix.net"
 
@@ -62,6 +62,6 @@
   description:
     de: "Gründer"
     en: "Founder"
-  image: "Sandra.jpg"
+  image: "Sandra.webp"
   socials:
     email: "sandra.zander@dd-ix.net"
