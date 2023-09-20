@@ -63,6 +63,15 @@
     email: "sandra.zander@dd-ix.net"
     linkedin: "sandra-zander"
 
+- name: "André Grüneberg"
+  description:
+    de: "Gründer"
+    en: "Founder"
+  image: "AndreGrueneberg.webp"
+  socials:
+    email: "andre.grueneberg@dd-ix.net"
+    github: green525
+
 - name: "Ines Kalz"
   description:
     de: "Gründer"
