@@ -13,7 +13,7 @@ Tübinger Str. 10
 Germany
 
 ### Vertreten durch:
-Max Muster (todo)
+Tassilo Tanneberger
 
 ### Kontakt:
 Telefon: +49 30 233219588
