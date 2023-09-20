@@ -9,9 +9,10 @@
     mastodon: "@revol_xut@c3d2.social"
     github: "revol-xut"
     email: "tassilo@dd-ix.net"
+    linkedin: "tassilo-tanneberger-725551292"
 
-- nick: "Melody Sofia Eroshevich"
-  name: "soon"
+- name: "Melody Sofia Eroshevich"
+  nick: ""
   ripe_handle: "MLDY1-RIPE"
   description:
     de: "Gründer"
@@ -21,6 +22,7 @@
     mastodon: "@melody@c3d2.social"
     github: "neonwhiskers"
     email: "melody@dd-ix.net"
+    linkedin: "sofia-melody-e-62a101209"
 
 - name: "Thomas Liske"
   ripe_handle: "LISK3-RIPE"
@@ -41,6 +43,7 @@
   socials:
     github: "waehlisch"
     email: "matthias.waehlisch@dd-ix.net"
+    linkedin: "matthiaswaehlisch"
 
 - name: "Thomas Kalz"
   description:
@@ -65,3 +68,4 @@
   image: "Sandra.jpg"
   socials:
     email: "sandra.zander@dd-ix.net"
+    linkedin: "sandra-zander"
