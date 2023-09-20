@@ -15,6 +15,10 @@ de:
     description: ''
     filename: DD-IX Mitgliedsantrag.pdf
     image: test_img.webp
+  - name: Fördermitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+    description: ''
+    filename: DD-IX Foerdermitgliedsantrag.pdf
+    image: test_img.webp
 en:
   - name: Satzung DD-IX Dresden Internet Exchange e.V. i.G.
     description: association statutes
@@ -31,4 +35,8 @@ en:
   - name: Mitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
     description: membership application form
     filename: DD-IX Mitgliedsantrag.pdf
+    image: test_img.webp
+  - name: Fördermitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+    description: ''
+    filename: DD-IX Foerdermitgliedsantrag.pdf
     image: test_img.webp
