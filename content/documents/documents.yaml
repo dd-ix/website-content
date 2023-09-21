@@ -23,7 +23,7 @@ en:
   - name: Satzung 
     description: association statutes
     filename: DD-IX Satzung.pdf
-    image: test_img.webp
+    image: DD-IX Satzung.webp
   - name: Code of Conduct 
     description: ''
     filename: DD-IX CoC EN.pdf
