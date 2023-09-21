@@ -1,42 +1,42 @@
 de:
-  - name: Satzung DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Satzung 
     description: ''
     filename: DD-IX Satzung.pdf
-    image: test_img.webp
-  - name: Code of Conduct DD-IX Dresden Internet Exchange e.V. i.G.
+    image: DD-IX Satzung.webp
+  - name: Code of Conduct
     description: ''
     filename: DD-IX CoC DE.pdf
     image: DD-IX CoC DE.webp
-  - name: Beitragsordnung DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Beitragsordnung
     description: ''
     filename: DD-IX Beitragsordnung.pdf
     image: DD-IX Beitragsordnung.webp
-  - name: Mitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Mitgliedsantrag
     description: ''
     filename: DD-IX Mitgliedsantrag.pdf
-    image: test_img.webp
-  - name: Fördermitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+    image: DD-IX Mitgliedsantrag.webp
+  - name: Fördermitgliedsantrag 
     description: ''
     filename: DD-IX Foerdermitgliedsantrag.pdf
-    image: test_img.webp
+    image: DD-IX Foerdermitgliedsantrag.webp
 en:
-  - name: Satzung DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Satzung 
     description: association statutes
     filename: DD-IX Satzung.pdf
     image: test_img.webp
-  - name: Code of Conduct DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Code of Conduct 
     description: ''
     filename: DD-IX CoC EN.pdf
     image: DD-IX CoC EN.webp
-  - name: Beitragsordnung DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Beitragsordnung 
     description: membership fee scale
     filename: DD-IX Beitragsordnung.pdf
     image: DD-IX Beitragsordnung.webp
-  - name: Mitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+  - name: Mitgliedsantrag 
     description: membership application form
     filename: DD-IX Mitgliedsantrag.pdf
-    image: test_img.webp
-  - name: Fördermitgliedsantrag DD-IX Dresden Internet Exchange e.V. i.G.
+    image: DD-IX Mitgliedsantrag.webp
+  - name: Fördermitgliedsantrag 
     description: ''
     filename: DD-IX Foerdermitgliedsantrag.pdf
-    image: test_img.webp
+    image: DD-IX Foerdermitgliedsantrag.webp
