@@ -1,5 +1,6 @@
 - name: "Melody Sofia Eroshevich"
   vorstand: True
+  teams: [ "Technical", "Services"]
   ripe_handle: "MLDY1-RIPE"
   description:
     de: "Vorstandsvorsitz"
@@ -12,6 +13,7 @@
     linkedin: "melody-sofia-e-62a101209"
 - name: "Sandra Zander"
   vorstand: True
+  teams: [ "Events", "FinancesAndLaw" ]
   description:
     de: "Finanzen- und Verwaltungsvorstand"
     en: "Financial and Administrative Board"
@@ -21,6 +23,7 @@
     linkedin: "sandra-zander"
 - name: "Tassilo Tanneberger"
   vorstand: True
+  teams: [ "Technical", "DevOps"]
   ripe_handle: "TASS5-RIPE"
   description:
     de: "Vorstand"
@@ -34,6 +37,7 @@
     linkedin: "tassilo-tanneberger-725551292"
 - name: "Thomas Liske"
   vorstand: True
+  teams: []
   ripe_handle: "LISK3-RIPE"
   description:
     de: "Vorstand"
@@ -45,6 +49,7 @@
     email: "thomas.liske@dd-ix.net"
 - name: "Marcel Koch"
   vorstand: True
+  teams: []
   description:
     de: "Vorstand"
     en: "Association Board Member"
@@ -55,6 +60,7 @@
     github: "MarcelCoding"
     email: "marcel.koch@dd-ix.net"
 - name: "Matthias Wählisch"
+  teams: []
   vorstand: False
   ripe_handle: "MW4568-RIPE"
   description:
@@ -67,6 +73,7 @@
     linkedin: "matthiaswaehlisch"
     website: "https://netd.cs.tu-dresden.de/about/waehlisch"
 - name: "Thomas Kalz"
+  teams: []
   vorstand: False
   description:
     de: "Gründer, Öffentlichkeitsarbeit WG"
@@ -75,6 +82,7 @@
   socials:
     email: "thomas.kalz@dd-ix.net"
 - name: "André Grüneberg"
+  teams: []
   vorstand: False
   ripe_handle: AGR-RIPE
   description:
@@ -85,6 +93,7 @@
     email: "andre.grueneberg@dd-ix.net"
     github: green525
 - name: "Ines Kalz"
+  teams: []
   vorstand: False
   description:
     de: "Gründerin, Finanzen und Rechtliches WG"
