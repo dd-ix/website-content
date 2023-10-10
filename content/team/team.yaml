@@ -1,8 +1,30 @@
+- name: "Melody Sofia Eroshevich"
+  vorstand: True
+  ripe_handle: "MLDY1-RIPE"
+  description:
+    de: "Vorstandsvorsitz"
+    en: "Association Board Chair"
+  image: "Melody.webp"
+  socials:
+    mastodon: "@melody@c3d2.social"
+    github: "neonwhiskers"
+    email: "melody@dd-ix.net"
+    linkedin: "melody-sofia-e-62a101209"
+- name: "Sandra Zander"
+  vorstand: True
+  description:
+    de: "Finanzen- und Verwaltungsvorstand"
+    en: "Financial and Administrative Board"
+  image: "SandraZander.webp"
+  socials:
+    email: "sandra.zander@dd-ix.net"
+    linkedin: "sandra-zander"
 - name: "Tassilo Tanneberger"
+  vorstand: True
   ripe_handle: "TASS5-RIPE"
   description:
-    de: "Gründer"
-    en: "Founder"
+    de: "Vorstand"
+    en: "Association Board Member"
   image: "TassiloTanneberger.webp"
   socials:
     website: "https://tanneberger.me"
@@ -10,30 +32,28 @@
     github: "revol-xut"
     email: "tassilo@dd-ix.net"
     linkedin: "tassilo-tanneberger-725551292"
-
-- name: "Melody Sofia Eroshevich"
-  ripe_handle: "MLDY1-RIPE"
-  description:
-    de: "Gründerin"
-    en: "Founder"
-  image: "Melody.webp"
-  socials:
-    mastodon: "@melody@c3d2.social"
-    github: "neonwhiskers"
-    email: "melody@dd-ix.net"
-    linkedin: "melody-sofia-e-62a101209"
-
 - name: "Thomas Liske"
+  vorstand: True
   ripe_handle: "LISK3-RIPE"
   description:
-    de: "Gründer"
-    en: "Founder"
+    de: "Vorstand"
+    en: "Association Board Member"
   image: "ThomasLiske.webp"
   socials:
     mastodon: "@liske@ibh.social"
     github: "liske"
     email: "thomas.liske@dd-ix.net"
-
+- name: "Marcel Koch"
+  vorstand: True
+  description:
+    de: "Vorstand"
+    en: "Association Board Member"
+  image: "MarcelKoch.webp"
+  socials:
+    website: "https://m4rc3l.de"
+    mastodon: "@m4rc3l@c3d2.social"
+    github: "MarcelCoding"
+    email: "marcel.koch@dd-ix.net"
 - name: "Matthias Wählisch"
   ripe_handle: "MW4568-RIPE"
   description:
@@ -45,38 +65,26 @@
     email: "matthias.waehlisch@dd-ix.net"
     linkedin: "matthiaswaehlisch"
     website: "https://netd.cs.tu-dresden.de/about/waehlisch"
-
 - name: "Thomas Kalz"
   description:
-    de: "Gründer"
-    en: "Founder"
+    de: "Gründer, Öffentlichkeitsarbeit WG"
+    en: "Founder, Public Relations WG"
   image: "ThomasKalz.webp"
   socials:
     email: "thomas.kalz@dd-ix.net"
-
-- name: "Sandra Zander"
-  description:
-    de: "Gründerin"
-    en: "Founder"
-  image: "SandraZander.webp"
-  socials:
-    email: "sandra.zander@dd-ix.net"
-    linkedin: "sandra-zander"
-
 - name: "André Grüneberg"
   ripe_handle: AGR-RIPE
   description:
-    de: "Gründer"
-    en: "Founder"
+    de: "Gründer, Tech WG"
+    en: "Founder, Tech WG"
   image: "AndreGrueneberg.webp"
   socials:
     email: "andre.grueneberg@dd-ix.net"
     github: green525
-
 - name: "Ines Kalz"
   description:
-    de: "Gründerin"
-    en: "Founder"
+    de: "Gründerin, Finanzen und Rechtliches WG"
+    en: "Founder, Finances & Legal WG"
   image: "InesKalz.webp"
   socials:
     email: "ines.kalz@dd-ix.net"
