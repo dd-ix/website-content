@@ -37,7 +37,7 @@
     linkedin: "tassilo-tanneberger-725551292"
 - name: "Thomas Liske"
   vorstand: True
-  teams: []
+  teams: [ "Technical", "Network" ]
   ripe_handle: "LISK3-RIPE"
   description:
     de: "Vorstand"
@@ -49,7 +49,7 @@
     email: "thomas.liske@dd-ix.net"
 - name: "Marcel Koch"
   vorstand: True
-  teams: []
+  teams: [ "Technical", "DevOps"]
   description:
     de: "Vorstand"
     en: "Association Board Member"
@@ -60,7 +60,7 @@
     github: "MarcelCoding"
     email: "marcel.koch@dd-ix.net"
 - name: "Matthias Wählisch"
-  teams: []
+  teams: [ "Technical", "Network" ]
   vorstand: False
   ripe_handle: "MW4568-RIPE"
   description:
@@ -73,7 +73,7 @@
     linkedin: "matthiaswaehlisch"
     website: "https://netd.cs.tu-dresden.de/about/waehlisch"
 - name: "Thomas Kalz"
-  teams: []
+  teams: [ "PublicRelations", "FinancesAndLaw" ]
   vorstand: False
   description:
     de: "Gründer, Öffentlichkeitsarbeit WG"
@@ -82,7 +82,7 @@
   socials:
     email: "thomas.kalz@dd-ix.net"
 - name: "André Grüneberg"
-  teams: []
+  teams: [ "Technical", "Network" ]
   vorstand: False
   ripe_handle: AGR-RIPE
   description:
@@ -93,7 +93,7 @@
     email: "andre.grueneberg@dd-ix.net"
     github: green525
 - name: "Ines Kalz"
-  teams: []
+  teams: [ "FinancesAndLaw" ]
   vorstand: False
   description:
     de: "Gründerin, Finanzen und Rechtliches WG"
