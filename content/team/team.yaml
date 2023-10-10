@@ -76,8 +76,8 @@
   working_groups: [ "PublicRelations", "FinanceAndLegal" ]
   vorstand: False
   description:
-    de: "Gründer, Öffentlichkeitsarbeit WG"
-    en: "Founder, Public Relations WG"
+    de: "Gründer"
+    en: "Founder"
   image: "ThomasKalz.webp"
   socials:
     email: "thomas.kalz@dd-ix.net"
@@ -86,8 +86,8 @@
   vorstand: False
   ripe_handle: AGR-RIPE
   description:
-    de: "Gründer, Tech WG"
-    en: "Founder, Tech WG"
+    de: "Gründer"
+    en: "Founder"
   image: "AndreGrueneberg.webp"
   socials:
     email: "andre.grueneberg@dd-ix.net"
@@ -96,8 +96,8 @@
   working_groups: [ "FinanceAndLegal" ]
   vorstand: False
   description:
-    de: "Gründerin, Finanzen und Rechtliches WG"
-    en: "Founder, Finances & Legal WG"
+    de: "Gründerin"
+    en: "Founder"
   image: "InesKalz.webp"
   socials:
     email: "ines.kalz@dd-ix.net"
