@@ -55,6 +55,7 @@
     github: "MarcelCoding"
     email: "marcel.koch@dd-ix.net"
 - name: "Matthias Wählisch"
+  vorstand: False
   ripe_handle: "MW4568-RIPE"
   description:
     de: "Gründer"
@@ -66,6 +67,7 @@
     linkedin: "matthiaswaehlisch"
     website: "https://netd.cs.tu-dresden.de/about/waehlisch"
 - name: "Thomas Kalz"
+  vorstand: False
   description:
     de: "Gründer, Öffentlichkeitsarbeit WG"
     en: "Founder, Public Relations WG"
@@ -73,6 +75,7 @@
   socials:
     email: "thomas.kalz@dd-ix.net"
 - name: "André Grüneberg"
+  vorstand: False
   ripe_handle: AGR-RIPE
   description:
     de: "Gründer, Tech WG"
@@ -82,6 +85,7 @@
     email: "andre.grueneberg@dd-ix.net"
     github: green525
 - name: "Ines Kalz"
+  vorstand: False
   description:
     de: "Gründerin, Finanzen und Rechtliches WG"
     en: "Founder, Finances & Legal WG"
