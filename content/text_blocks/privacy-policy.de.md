@@ -17,7 +17,7 @@ III. Informationen zur Datenverarbeitung
 
 Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:
 
-DD-IX Dresden Internet Exchange e.V. i.G.  
+DD-IX Dresden Internet Exchange e.V.  
 Tübinger Str. 10  
 01189 Dresden
 

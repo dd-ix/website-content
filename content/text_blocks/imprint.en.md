@@ -2,7 +2,7 @@
 
 Angaben gemäß § 5 TMG
 
-DD-IX Dresden Internet Exchange e.V. i.G.
+DD-IX Dresden Internet Exchange e.V.
 
 c/o RoboLAB
 
