@@ -12,8 +12,8 @@ DD-IX is the Internet exchange point for Dresden and all of Saxony. As a
 non-commercial and open platform, we are available to all Internet
 stakeholders for multilateral exchange of Internet traffic.
 
-The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. i.G.
-The DD-IX Dresden Internet Exchange e.V. i.G. is a registered association under German law.
+The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V.
+The DD-IX Dresden Internet Exchange e.V. is a registered association under German law.
 
 
 ## Requirements

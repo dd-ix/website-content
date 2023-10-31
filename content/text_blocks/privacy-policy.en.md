@@ -17,7 +17,7 @@ III. Information about the data processing
 
 The party responsible for this website (the „controller“) for purposes of data protection law is:
 
-DD-IX Dresden Internet Exchange e.V. i.G.  
+DD-IX Dresden Internet Exchange e.V.  
 Tübinger Str. 10  
 01189 Dresden
 
