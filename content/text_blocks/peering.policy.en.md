@@ -76,7 +76,7 @@ technical requirements must also be met by each peer:
 
 - peers require to have a physical connection to one of DD-IX point of presence
 - only a single static MAC-address is allowed to be used on a peering port (single port or LAG)
-- peers must never route the peering prefix via IGP nor EGP
+- peers must never route or announce the peering prefix via IGP nor EGP
 - peers are only allowed to use assigned L3 addresses on the peering broadcast domain
 - peers must be authorized to announce at least one DFZ routable prefix that comply
   with the filters of the DD-IX route servers
@@ -84,6 +84,9 @@ technical requirements must also be met by each peer:
 - peers are encouraged to maintain a PeeringDB record
 - peers are encouraged to peer with the DD-IX route servers
 - peers are encouraged to apply strict route filters
+- peers must never direct traffic via static routing to other peers without their consent
+- the MTU on the peering LAN is 1500 octets
+- Proxy-ARP must be turned off
 
 ## Route Servers
 
