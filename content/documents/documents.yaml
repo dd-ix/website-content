@@ -19,6 +19,10 @@ de:
     description: ''
     filename: DD-IX Foerdermitgliedsantrag.pdf
     image: DD-IX Foerdermitgliedsantrag.webp
+  - name: TermsofService
+    description: ''
+    filename: DD-IX TermsofService.pdf
+    image: DD-IX TermsofService.webp
 en:
   - name: Satzung 
     description: association statutes
@@ -40,3 +44,7 @@ en:
     description: ''
     filename: DD-IX Foerdermitgliedsantrag.pdf
     image: DD-IX Foerdermitgliedsantrag.webp
+  - name: TermsofService
+    description: ''
+    filename: DD-IX TermsofService.pdf
+    image: DD-IX TermsofService.webp
