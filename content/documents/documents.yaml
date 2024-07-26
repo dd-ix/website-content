@@ -1,50 +1,50 @@
 de:
   - name: Satzung 
     description: ''
-    filename: DD-IX Satzung.pdf
-    image: DD-IX Satzung.webp
+    filename: DD-IX_Satzung.pdf
+    image: DD-IX_Satzung.webp
   - name: Code of Conduct
     description: ''
-    filename: DD-IX CoC DE.pdf
-    image: DD-IX CoC DE.webp
+    filename: DD-IX_CoC_DE.pdf
+    image: DD-IX_CoC_DE.webp
   - name: Beitragsordnung
     description: ''
-    filename: DD-IX Beitragsordnung.pdf
-    image: DD-IX Beitragsordnung.webp
+    filename: DD-IX_Beitragsordnung.pdf
+    image: DD-IX_Beitragsordnung.webp
   - name: Mitgliedsantrag
     description: ''
-    filename: DD-IX Mitgliedsantrag.pdf
-    image: DD-IX Mitgliedsantrag.webp
+    filename: DD-IX_Mitgliedsantrag.pdf
+    image: DD-IX_Mitgliedsantrag.webp
   - name: Fördermitgliedsantrag 
     description: ''
-    filename: DD-IX Foerdermitgliedsantrag.pdf
-    image: DD-IX Foerdermitgliedsantrag.webp
+    filename: DD-IX_Foerdermitgliedsantrag.pdf
+    image: DD-IX_Foerdermitgliedsantrag.webp
   - name: TermsofService
     description: ''
-    filename: DD-IX TermsofService.pdf
-    image: DD-IX TermsofService.webp
+    filename: DD-IX_TermsofService.pdf
+    image: DD-IX_TermsofService.webp
 en:
   - name: Satzung 
     description: association statutes
-    filename: DD-IX Satzung.pdf
-    image: DD-IX Satzung.webp
+    filename: DD-IX_Satzung.pdf
+    image: DD-IX_Satzung.webp
   - name: Code of Conduct 
     description: ''
-    filename: DD-IX CoC EN.pdf
-    image: DD-IX CoC EN.webp
+    filename: DD-IX_CoC_EN.pdf
+    image: DD-IX_CoC_EN.webp
   - name: Beitragsordnung 
     description: membership fee scale
-    filename: DD-IX Beitragsordnung.pdf
-    image: DD-IX Beitragsordnung.webp
+    filename: DD-IX_Beitragsordnung.pdf
+    image: DD-IX_Beitragsordnung.webp
   - name: Mitgliedsantrag 
     description: membership application form
-    filename: DD-IX Mitgliedsantrag.pdf
-    image: DD-IX Mitgliedsantrag.webp
+    filename: DD-IX_Mitgliedsantrag.pdf
+    image: DD-IX_Mitgliedsantrag.webp
   - name: Fördermitgliedsantrag 
     description: ''
-    filename: DD-IX Foerdermitgliedsantrag.pdf
-    image: DD-IX Foerdermitgliedsantrag.webp
+    filename: DD-IX_Foerdermitgliedsantrag.pdf
+    image: DD-IX_Foerdermitgliedsantrag.webp
   - name: TermsofService
     description: ''
-    filename: DD-IX TermsofService.pdf
-    image: DD-IX TermsofService.webp
+    filename: DD-IX_TermsofService.pdf
+    image: DD-IX_TermsofService.webp
