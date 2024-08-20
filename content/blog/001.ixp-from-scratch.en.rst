@@ -1,3 +1,12 @@
+---
+published: 2024-08-12
+description: Members of DD-IX at BCIX
+title: IXP-from-Scratch: Building a new IX 01
+keywords: [ Tech ]
+authors: [ Fiasco, Marcel, Tassilo, Matthias]
+image: 001_ddix_lead_image.webp
+---
+
 IXP-from-Scratch: Building a new IX
 ###################################
 
@@ -41,7 +50,7 @@ Services we provide
 
 First and foremost, an IXP is a peering platform. It provides layer 2 connectivity based on one or multiple switches and a route server to ease the setup of BGP sessions. Operating such a peering infrastructure requires yet other internal services, which are not directly offered to members or peers but necessary to run the daily business.
 
-.. figure:: 001.ddix_peering_lan.webp
+.. figure:: 001_ddix_peering_lan.webp
     :width: 80%
     :align: center
 
@@ -72,7 +81,7 @@ Hardware we received
 We started operation thanks to the support of several organisations that provided us access to hardware, including:
 various Arista switches in a lab
 
-.. image:: 001.ddix_lab_switches.webp
+.. image:: 001_ddix_lab_switches.webp
    :align: right
    :width: 50%
 
