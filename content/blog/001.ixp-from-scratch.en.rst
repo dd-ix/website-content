@@ -1,0 +1,99 @@
+IXP-from-Scratch: Building a new IX
+###################################
+
+In this new series "IXP from Scratch", we report about our endeavor of building DD-IX, an Internet Exchange located in the city of Dresden, Germany. DD-IX is driven by a grassroots community that loves contributing to a resilient and efficient Internet. We start with some basic background and will share technical design decisions in upcoming articles.
+
+Believe it or not, the Internet is still a community project
+------------------------------------------------------------
+
+The Internet is a network of networks and Internet Exchange Points (IXP) are a crucial part of the underlying infrastructure. They facilitate public and local interconnections between networks, which increases resiliency because of higher interconnectivity and reduces delays because of vicinity. They are a place where networks meet technically and non-technically.
+
+In autumn 2023, we founded the DD-IX Dresden Internet Exchange association with the objective to improve interconnectivity in the city of Dresden, Germany and the region of Saxony. Now that we are going into operation, we would like to share how we designed and implemented DD-IX. In a loose series of articles, we will discuss various technical aspects from the perspective of a small IX, such as:
+
+- network and security design
+- peering LAN hardening
+- configuration automation
+- observability and validation.
+
+Before we go into more technical details in the following articles, let’s talk about a few non-technical points, too.
+
+*Disclaimer: In this and future articles, we do not argue that our design decisions are perfect nor the only way to go, even though we thoroughly thought about them. If you have different opinions or want to share other experiences, we are very much looking forward to your comments below.*
+
+
+Keep local traffic local
+------------------------
+
+The DD-IX was founded by a grassroots community that believes in the key principle of an IXP: *Keep local traffic local*. There are various Internet providers and network operators of different sizes in Dresden and the larger region of Saxony. Direct interconnectivity, however, was (or still is) very low. We are dissatisfied that traffic between providers in the city often leaves even the federal state and travels several hundred kilometres, only to be routed, for example, from Berlin or Frankfurt back to Dresden.
+
+In addition to lower latencies, supporting the principle of keeping local traffic local brings another benefit: diversity in the peering infrastructure and, as a consequence, robustness. Local peering facilities operated by independent associations, companies, or other organisations are in contrast to telecommunication providers aiming for consolidation. Having a single point of contact may seem convenient for a customer, especially when you need to span multiple geographical regions, but relying on a single organisation fosters monopolies. At DD-IX, we believe in the advantages of diversity.
+
+
+Being a neutral peering platform
+--------------------------------
+
+The DD-IX is operated by an association registered in Germany whose members are exclusively private individuals. Our `Statutes <https://content.dd-ix.net/documents/download/DD-IX_Satzung.pdf>`_ and `Code of Conduct <https://content.dd-ix.net/documents/download/DD-IX_CoC_EN.pdf>`_ ensure that the IX stays a neutral and independent peering platform. Members of the DD-IX association have voting rights to steer the association.
+
+Peering at DD-IX does not require to be a member of the association. Our `Peering Policy <https://dd-ix.net/peering/policy>`_ governs conditions and guidelines for peering at DD-IX.
+
+
+Services we provide
+-------------------
+
+First and foremost, an IXP is a peering platform. It provides layer 2 connectivity based on one or multiple switches and a route server to ease the setup of BGP sessions. Operating such a peering infrastructure requires yet other internal services, which are not directly offered to members or peers but necessary to run the daily business.
+
+.. figure:: 001.ddix_peering_lan.webp
+    :width: 80%
+    :align: center
+
+    Infrastructure required for an IX
+
+External services
+_________________
+
+We decided to start operations at two Points of Presence (PoP) from the beginning, due to the requirements of our peers. Both PoPs are equipped with a route server and are connected redundantly. To find potential PoPs and members in your region, PeeringDB is of great help – if you run your own network, maintain your entries.
+
+We have decided to officially not offer physical 1GbE ports in order to simplify upgrades of our switching hardware. We plan to offer private VLAN interconnects between our peers in the near future.
+
+DD-IX also operates an anycast name server instance of the AS112 project to resolve reverse lookup queries for non-unique IP addresses locally. We announce AS112 on our route servers to all peers.
+
+
+Internal services
+_________________
+
+Internal services include a firewall, authentication handling, cloud services to share documents, a documentation platform, DNS, email, etc. When we designed our local network, we explicitly decided to rely on IPv6 only, which was partly a challenge on its own.
+
+To conclude, running an IXP is more than just providing some switch ports. We will write about the technical details and lessons learned in future RIPE Labs articles. Just look for IXP-from-Scratch.
+
+
+
+Hardware we received
+--------------------
+
+We started operation thanks to the support of several organisations that provided us access to hardware, including:
+various Arista switches in a lab
+
+.. image:: 001.ddix_lab_switches.webp
+   :align: right
+   :width: 50%
+
+- server hardware to run our route servers, a firewall, and a virtualisation server
+- colocation rack space in two data centres
+- Arista DCS-7050SX switches supporting BGP eVPN
+- Flexoptix SFP+ transceivers
+- Arista 7148S layer 2 switches.
+
+This enabled us to start directly with a network design that can be easily scaled up later on.
+
+
+Acknowledgements
+----------------
+
+The Internet is a community project, and we consider us lucky to experience this directly since the DD-IX journey started. Many people, ISPs, and IXPs encouraged us to continue. Thanks!
+
+Several companies supported us in a very early stage. Thanks `BCIX <https://www.bcix.de/>`_, `DSI <https://www.dsi.net/>`_, `IBH <https://www.ibh.de/>`_, `SachsenGigaBit <https://www.sachsen-gigabit.de/>`_, `Flexoptix <https://www.flexoptix.net/>`_. We would like to use the opportunity to thank Christian Seitz, Steffen David, André Grüneberg, and René Fichtmüller for fruitful discussions.
+
+Thanks to `RIPE Labs <https://labs.ripe.net/>`_ to provide a home for this series of articles.
+
+----
+
+This article was first `published  on RIPE Labs <https://labs.ripe.net/author/liske/ixp-from-scratch-building-a-new-ix/>`_ on 12 Aug 2024.
