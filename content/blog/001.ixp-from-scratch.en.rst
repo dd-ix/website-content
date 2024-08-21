@@ -1,9 +1,9 @@
 ---
 published: 2024-08-12
 description: Members of DD-IX at BCIX
-title: IXP-from-Scratch: Building a new IX 01
+title: "IXP-from-Scratch: Building a new IX 01"
 keywords: [ Tech ]
-authors: [ Fiasco, Marcel, Tassilo, Matthias]
+authors: [ Thomas, Marcel, Tassilo, Matthias ]
 image: 001_ddix_lead_image.webp
 ---
 
@@ -82,8 +82,8 @@ We started operation thanks to the support of several organisations that provide
 various Arista switches in a lab
 
 .. image:: 001_ddix_lab_switches.webp
-   :align: right
-   :width: 50%
+  :align: right
+  :width: 50%
 
 - server hardware to run our route servers, a firewall, and a virtualisation server
 - colocation rack space in two data centres
