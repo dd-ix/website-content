@@ -29,8 +29,8 @@ because of higher interconnectivity and reduces delays because of
 vicinity. They are a place where networks meet technically and
 non-technically.
 
-In autumn 2023, we founded the https://dd-ix.net[DD-IX Dresden Internet
-Exchange] association with the objective to improve interconnectivity in
+In autumn 2023, we founded the |link:https://dd-ix.net[DD-IX Dresden Internet
+Exchange]| association with the objective to improve interconnectivity in
 the city of Dresden, Germany and the region of Saxony. Now that we are
 going into operation, we would like to share how we designed and
 implemented DD-IX. In a loose series of articles, we will discuss
@@ -75,8 +75,8 @@ DD-IX, we believe in the advantages of diversity.
 
 The DD-IX is operated by an association registered in Germany whose
 members are exclusively private individuals. Our
-https://content.dd-ix.net/documents/download/DD-IX_Satzung.pdf[Statutes]
-and https://content.dd-ix.net/documents/download/DD-IX_CoC_EN.pdf[Code
+link:https://content.dd-ix.net/documents/download/DD-IX_Satzung.pdf[Statutes]
+and link:https://content.dd-ix.net/documents/download/DD-IX_CoC_EN.pdf[Code
 of Conduct] ensure that the IX stays a neutral and independent peering
 platform. Members of the DD-IX association have voting rights to steer
 the association.
@@ -93,7 +93,9 @@ ease the setup of BGP sessions. Operating such a peering infrastructure
 requires yet other internal services, which are not directly offered to
 members or peers but necessary to run the daily business.
 
-image::https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp[link=https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp]
+.Infrastructure required for an IX
+[#img-peering-lan,link=https://content.dd-ix.net/blog/assets/]
+image::001_ddix_peering_lan.webp[]
 
 ==== External Services
 
@@ -136,7 +138,8 @@ virtualisation server.
 * many Flexoptix SFP+ ports.
 * Arista 7148S layer 2 switches.
 
-image::https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp[link=https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp]
+[#img-switches,link=https://content.dd-ix.net/blog/assets/]
+image::001_ddix_lab_switches.webp[]
 
 This enabled us to start directly with a network design that can be
 easily scaled up later on.
