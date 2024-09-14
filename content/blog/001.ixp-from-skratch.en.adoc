@@ -29,8 +29,8 @@ because of higher interconnectivity and reduces delays because of
 vicinity. They are a place where networks meet technically and
 non-technically.
 
-In autumn 2023, we founded the link:https://dd-ix.net[DD-IX Dresden Internet
-Exchange] association with the objective to improve interconnectivity in
+In autumn 2023, we founded the |link:https://dd-ix.net[DD-IX Dresden Internet
+Exchange]| association with the objective to improve interconnectivity in
 the city of Dresden, Germany and the region of Saxony. Now that we are
 going into operation, we would like to share how we designed and
 implemented DD-IX. In a loose series of articles, we will discuss
