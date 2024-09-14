@@ -2,7 +2,7 @@
 published: 2024-08-12
 modified: 2024-08-15
 description: Telling the story on how DD-IX was built.
-title: Building a New IX
+title: Network and Security Design
 keywords: [ IXP-from-Scratch ]
 authors: [ Thomas Lise, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
 image: 002_ddix_lead_image.webp
@@ -70,7 +70,7 @@ Provider], which we use to authenticate on network devices.
 ==== Selecting the Right Platform for your Services
 
 How do you want to operate all these services? A single server to rule
-them all? Just a bunch of VMs? K8s? `+<your level of distribution>+`?
+them all? Just a bunch of VMs? K8s? `+{your level of distribution}+`?
 And then you have to decide whether you treat your servers as
 https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets[Pets
 or Cattles] 😉.
@@ -169,7 +169,7 @@ around 2018, and so we have IPv4 addresses in our MP-BGP EVPN underlay.
 What we did not expect was that our core software (NixOS, IXP Manager,
 and arouteserver) requires also IPv4. Unfortunately, the NixOS
 infrastructure relies heavily on GitHub and, even in 2024, GitHub still
-does not provide `+AAAA+` ressource records for `+github.com+`. Some of
+does not provide `+{AAAA}+` ressource records for `+{github.com}+`. Some of
 the online lookups that our IXP tool chains perform are still offered
 only via IPv4.
 
@@ -258,7 +258,7 @@ and we follow these simple rules:
 * Split the access rules into sub-ACLs for each tuple of source and
 destination zone.
 * A sub-ACL always enforces a final decision: they all should have a
-final `+deny any any+` rule.
+final `+{deny any any}+` rule.
 * The inbound and outbound interfaces allow to map the corresponding
 source and destination zones.
 * From the main ACL, the corresponding sub-ACL is only called based on
