@@ -93,8 +93,8 @@ ease the setup of BGP sessions. Operating such a peering infrastructure
 requires yet other internal services, which are not directly offered to
 members or peers but necessary to run the daily business.
 
-[#img-peering-lan,link=https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp]
-image::peering-lan.webp[]
+[#img-peering-lan,link=https://content.dd-ix.net/blog/assets/]
+image::001_ddix_peering_lan.webp[]
 
 ==== External Services
 
@@ -137,7 +137,8 @@ virtualisation server.
 * many Flexoptix SFP+ ports.
 * Arista 7148S layer 2 switches.
 
-image::https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp[link=https://content.dd-ix.net/blog/assets/001_ddix_peering_lan.webp]
+[#img-switches,link=https://content.dd-ix.net/blog/assets/]
+image::001_ddix_lab_switches.webp[]
 
 This enabled us to start directly with a network design that can be
 easily scaled up later on.
