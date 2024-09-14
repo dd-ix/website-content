@@ -40,7 +40,7 @@ alerting
 
 *to manage our daily office work* - *Nextcloud* - with OnlyOffice and
 draw.io integration - *Vaultwarden* - our password manager - *Mailman3*
-- for community mailing lists (e.g. https://dd-ix.net/g/ddnog[DDNOG])
+- for community mailing lists (e.g. link:https://dd-ix.net/g/ddnog[DDNOG])
 
 ==== User authentication and authorization
 
@@ -60,24 +60,23 @@ We encourage our users to use passwordless _WebAuthn_-based
 authentication with user verification and require 2FA for password-based
 login as a fallback.
 
-At the begining, we used https://www.keycloak.org/[Keycloak] as IdP.
+At the beginning, we used link:https://www.keycloak.org/[Keycloak] as IdP.
 While Keyclock is very flexible and almost feature complete, it requires
 a lot of configuration and does not support RADIUS. We later changed to
-https://goauthentik.io/[Authentik] because it is more lightweight and
-provides a https://docs.goauthentik.io/docs/providers/radius/[RADIUS
-Provider], which we use to authenticate on network devices.
+link:https://goauthentik.io/[Authentik] because it is more lightweight and
+provides a https://docs.goauthentik.io/docs/providers/radius/[RADIUS Provider],
+which we use to authenticate on network devices.
 
 ==== Selecting the Right Platform for your Services
 
 How do you want to operate all these services? A single server to rule
-them all? Just a bunch of VMs? K8s? `+{your level of distribution}+`?
+them all? Just a bunch of VMs? K8s? `+your level of distribution+`?
 And then you have to decide whether you treat your servers as
-https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets[Pets
-or Cattles] 😉.
+https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets[Pets or Cattles] 😉.
 
 Those questions are not easy to answer and depend not only on the
 computer resources available, but also on the knowledge (and habits) of
-the staff operating the IX. At https://dd-ix.net[DD-IX], these
+the staff operating the IX. At link:https://dd-ix.net[DD-IX], these
 deliberations influenced our choice of software, which we would like to
 highlight in the following sections:
 
@@ -169,7 +168,7 @@ around 2018, and so we have IPv4 addresses in our MP-BGP EVPN underlay.
 What we did not expect was that our core software (NixOS, IXP Manager,
 and arouteserver) requires also IPv4. Unfortunately, the NixOS
 infrastructure relies heavily on GitHub and, even in 2024, GitHub still
-does not provide `+{AAAA}+` ressource records for `+{github.com}+`. Some of
+does not provide `+AAAA+` ressource records for `+github.com+`. Some of
 the online lookups that our IXP tool chains perform are still offered
 only via IPv4.
 
@@ -258,7 +257,7 @@ and we follow these simple rules:
 * Split the access rules into sub-ACLs for each tuple of source and
 destination zone.
 * A sub-ACL always enforces a final decision: they all should have a
-final `+{deny any any}+` rule.
+final `+deny any any+` rule.
 * The inbound and outbound interfaces allow to map the corresponding
 source and destination zones.
 * From the main ACL, the corresponding sub-ACL is only called based on
@@ -274,7 +273,7 @@ even large firewall policies. To add or find a rule, we only need to
 know the source and destination zones to locate the corresponding
 sub-ACL, which is usually very easy to understand. One additional
 advantage is that there is a much lower risk of writing rules that allow
-for more than intented.
+for more than intended.
 
 === Conclusions
 
