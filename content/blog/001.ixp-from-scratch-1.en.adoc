@@ -4,7 +4,7 @@ modified: 2024-08-15
 description: Telling the story on how DD-IX was built.
 title: Building a New IX
 keywords: [ IXP-from-Scratch ]
-authors: [ Thomas Lise, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
+authors: [ Thomas Liske, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
 image: 001_ddix_lead_image.webp
 ---
 

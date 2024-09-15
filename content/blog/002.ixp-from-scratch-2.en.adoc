@@ -4,7 +4,7 @@ modified: 2024-08-26
 description: Introduction to network and security design decisions aswell as implementation.
 title: Network and Security Design
 keywords: [ IXP-from-Scratch ]
-authors: [ Thomas Lise, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
+authors: [ Thomas Liske, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
 image: 002_ddix_lead_image.webp
 ---
 
@@ -168,7 +168,7 @@ around 2018, and so we have IPv4 addresses in our MP-BGP EVPN underlay.
 What we did not expect was that our core software (NixOS, IXP Manager,
 and arouteserver) requires also IPv4. Unfortunately, the NixOS
 infrastructure relies heavily on GitHub and, even in 2024, GitHub still
-does not provide `+AAAA+` ressource records for `+github.com+`. Some of
+does not provide `+AAAA+` resource records for `+github.com+`. Some of
 the online lookups that our IXP tool chains perform are still offered
 only via IPv4.
 
@@ -216,7 +216,7 @@ full-stack IXP testing environment.
 This is a somewhat vague definition and should contain from where can
 this service be accessed and to which application tier does the service
 belong to (if applicable)? A Web application such as the IXP Manager
-uses three services, each of them assigned to a differnt zone:
+uses three services, each of them assigned to a different zone:
 
 * *SVC-Public* - our reverse proxy making the service public accessible
 * *SVC-Services* - the application server where IXP Manager runs
@@ -241,7 +241,7 @@ on which services should be separated from others.
 == Firewall & Routing
 
 We use a stateful firewall to apply a restrictive ACL-based policy when
-routing beetwen the security zones. The firewall is based on
+routing between the security zones. The firewall is based on
 https://netfilter.org/projects/nftables/[nftables], which provides a
 more comprehensible firewall implementation compared to the older
 iptables and netfilter approach. Another advantage of nftables is that
