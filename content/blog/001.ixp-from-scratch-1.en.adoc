@@ -10,7 +10,8 @@ image: 001_ddix_lead_image.webp
 
 = IXP-from-Scratch: Building a New Public Internet Echange
 
-[width="5%",cols="100%",]
+
+[width="10%",cols="100%",]
 |===
 |In this new series "`IXP from Scratch`", we report about our endeavor
 of building DD-IX, an Internet Exchange located in the city of Dresden,
@@ -146,11 +147,11 @@ easily scaled up later on.
 
 == Acknowledgements
 
-The Internet is a community project, and we consider us lucky to
-experience this directly since the DD-IX journey started. Many people,
-ISPs, and IXPs encouraged us to continue. Thanks! Several companies
-supported us in a very early stage. Thanks DSI, IBH, Flexoptix. We would
-like to use the opportunity to thank Steffen David, André Grüneberg, and
-René Fichtmüller for fruitful discussions. Thanks to RIPE to provide a
-home for this series of articles.
+The Internet is a community project, and we consider us lucky to experience this directly 
+since the DD-IX journey started. Many people, ISPs, and IXPs encouraged us to continue. Thanks!
+
+Several companies supported us in a very early stage. Thanks link:https://bcix.de[BCIX], link:https://dsi.net[DSI],
+link:https://ibh.de[IBH], link:https://sachsen-gigabit.de[SachsenGigaBit], link:http://flexoptix.net/[Flexoptix]. We 
+would like to use the opportunity to thank Christian Seitz, Steffen David, André Grüneberg, and René Fichtmüller 
+for fruitful discussions.
 
