@@ -1,7 +1,7 @@
 ---
-published: 2024-08-12
-modified: 2024-08-15
-description: Telling the story on how DD-IX was built.
+published: 2024-08-26
+modified: 2024-08-26
+description: Introduction to network and security design decisions aswell as implementation.
 title: Network and Security Design
 keywords: [ IXP-from-Scratch ]
 authors: [ Thomas Lise, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
