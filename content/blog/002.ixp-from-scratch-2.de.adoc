@@ -11,7 +11,7 @@ image: 002_ddix_lead_image.webp
 
 [width="5%",cols="100%",]
 |===
-In the second article of our series "`IXP from Scratch`", we introduce
+In the second article of our series "IXP from Scratch", we introduce
 network and security design decisions as well as implementations we made
 at DD-IX, an Internet Exchange located in the city of Dresden, Germany.
 In principle, an IX consists of a single broadcast domain, but in
