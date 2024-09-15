@@ -10,7 +10,6 @@ image: 001_ddix_lead_image.webp
 
 = IXP-from-Scratch: Building a New Public Internet Echange
 
-
 [width="10%",cols="100%",]
 |===
 |In this new series "`IXP from Scratch`", we report about our endeavor
