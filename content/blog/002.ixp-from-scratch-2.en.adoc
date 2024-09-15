@@ -7,20 +7,19 @@ keywords: [ IXP-from-Scratch ]
 authors: [ Thomas Lise, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
 image: 002_ddix_lead_image.webp
 ---
-== IXP-from-Scratch: Network and Security Design
+= IXP-from-Scratch: Network and Security Design
 
-'''''
-
+[width="5%",cols="100%",]
+|===
 In the second article of our series "`IXP from Scratch`", we introduce
 network and security design decisions as well as implementations we made
 at DD-IX, an Internet Exchange located in the city of Dresden, Germany.
 In principle, an IX consists of a single broadcast domain, but in
 practice an IX has to operate several services securely to provide
 reliable peering services to its members.
+|===
 
-'''''
-
-=== Services of IXP operations
+== Services of IXP operations
 
 An IX provides external and internal services for peers and members. At
 DD-IX, all services run on our own hardware, except for e-mail, web
@@ -42,7 +41,7 @@ alerting
 draw.io integration - *Vaultwarden* - our password manager - *Mailman3*
 - for community mailing lists (e.g. link:https://dd-ix.net/g/ddnog[DDNOG])
 
-==== User authentication and authorization
+=== User authentication and authorization
 
 [#img-authentik,link=https://content.dd-ix.net/blog/assets/]
 image::002_authentik.webp[]
@@ -67,7 +66,7 @@ link:https://goauthentik.io/[Authentik] because it is more lightweight and
 provides a https://docs.goauthentik.io/docs/providers/radius/[RADIUS Provider],
 which we use to authenticate on network devices.
 
-==== Selecting the Right Platform for your Services
+=== Selecting the Right Platform for your Services
 
 How do you want to operate all these services? A single server to rule
 them all? Just a bunch of VMs? K8s? `+your level of distribution+`?
@@ -80,7 +79,7 @@ the staff operating the IX. At link:https://dd-ix.net[DD-IX], these
 deliberations influenced our choice of software, which we would like to
 highlight in the following sections:
 
-===== NixOS, a home for our administrative services
+==== NixOS, a home for our administrative services
 
 https://nixos.org[NixOS] is a Linux distribution in which the entire
 system configuration and the packages are described by the
@@ -89,7 +88,7 @@ features such as atomic rollovers, rollbacks, and strong
 reproducibility. However, describing a system configuration with a
 functional DSL like nix requires a lot of training.
 
-===== Alpine Linux, a home for our network infrastructure components
+==== Alpine Linux, a home for our network infrastructure components
 
 https://alpinelinux.org/[Alpine Linux] is a Linux distribution that
 supports diskless operation. Running the operating system completely in
@@ -102,7 +101,7 @@ routers, route servers, and firewalls. The frequently changing parts of
 the configuration, e.g., BGP configurations, will be loaded during
 runtime to not conflict with an always operational base system.
 
-===== Ansible
+==== Ansible
 
 Having the two operating environments NixOS and Alpine Linux we still
 need some glue for cross-system automation. For this, we use
@@ -110,7 +109,7 @@ https://docs.ansible.com/[Ansible], which is executed on NixOS to
 repeatly reconfigure our Alpine Linux-based route servers and Arista
 EOS-based peering switches.
 
-==== Service isolation
+=== Service isolation
 
 We isolate all services using hypervisors to minimise the risk of
 lateral movement in case a service is exploited. It may sound like a lot
@@ -139,7 +138,7 @@ single machine setup. With the exception of memory and IP addresses, all
 resources can be shared efficiently with this setup. We make our
 nix-config https://github.com/dd-ix/nix-config/[publicly available].
 
-=== Addressing Scheme
+== Addressing Scheme
 
 We decided to use IPv6 addressing for all internal and external
 services. Of course, we also assigned a small number of legacy IPv4
@@ -155,7 +154,7 @@ zone from the network ID of an IPv6 address without consulting our IP
 address management tool (Netbox). It is, therefore, much easier for
 people to work with IPv6 addresses than with IPv4 addresses 😎.
 
-==== How hard can IPv6-only be?
+=== How hard can IPv6-only be?
 
 Originally, since we started with a greenfield deployment, we were
 optimistic deploying an IPv6-only network internally. This should be
@@ -183,7 +182,7 @@ if it is required. The non-public VLANs use an
 https://www.rfc-editor.org/rfc/rfc1918.html[RFC1918] setup with NAT, we
 can’t have everything.
 
-=== Network Segmentation
+== Network Segmentation
 
 We base the segmentation of our network on a very lean model. Every
 microvm is attached to a single broadcast domain, implemented using
@@ -198,7 +197,7 @@ zones.
 But which service goes into which zone? We make the assignment based on
 three differentiations.
 
-==== Security Zones
+=== Security Zones
 
 The "`**IXP**`" zone contains all devices and services that are directly
 attached to the peering LAN. This includes dedicated switches for the
@@ -211,7 +210,7 @@ operations.
 In the future, we are also planning to have a "`**LAB**`" zone for a
 full-stack IXP testing environment.
 
-==== Usage
+=== Usage
 
 This is a somewhat vague definition and should contain from where can
 this service be accessed and to which application tier does the service
@@ -222,7 +221,7 @@ uses three services, each of them assigned to a differnt zone:
 * *SVC-Services* - the application server where IXP Manager runs
 * *SVC-Backends* - a database at our backend database service
 
-==== Distinguisher
+=== Distinguisher
 
 If we require more than a single VLAN within a zone a distinguisher is
 appended. This might be a counter or a location abbreviation. At the
@@ -238,7 +237,7 @@ image::002_network_design_segmentation.webp[]
 Defining zones helps to get some criteria for a more objective decision
 on which services should be separated from others.
 
-=== Firewall & Routing
+== Firewall & Routing
 
 We use a stateful firewall to apply a restrictive ACL-based policy when
 routing beetwen the security zones. The firewall is based on
@@ -275,7 +274,7 @@ sub-ACL, which is usually very easy to understand. One additional
 advantage is that there is a much lower risk of writing rules that allow
 for more than intended.
 
-=== Conclusions
+== Conclusions
 
 Planing the server infrastructure and network to run your IXP is not
 always obvious. Before you start, do not forget:
