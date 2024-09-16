@@ -8,8 +8,6 @@ authors: [ Thomas Liske, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
 image: 002_ddix_lead_image.webp
 ---
 
-= IXP-from-Scratch: Network and Security Design
-
 [width="5%",cols="100%",]
 |===
 |In the second article of our series "`IXP from Scratch`", we introduce
