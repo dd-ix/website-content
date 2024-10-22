@@ -87,7 +87,7 @@ without traffic disruption in the overlay.
 ==== Detecting Errors: To BFD or not to BFD?
 
 To quickly detect link errors in the underlay, we use
-https://doi.org/10.17487/RFC5880[_Bidirectional Forwarding Detection_(BFD)] 
+link:https://doi.org/10.17487/RFC5880[Bidirectional Forwarding Detection (BFD)] 
 on all underlay ports. This allows us to reduce IGP convergence
 times to a minimum without tuning any routing protocol default timers.
 
@@ -102,9 +102,9 @@ unreachable ports from the EVPN.
 The most challenging part of setting up our switches is to protect the
 _Peering LAN_ to which the routers of our peers are connected to, see
 also
-https://blog.apnic.net/2024/07/17/revisiting-ixp-peering-lan-security-in-the-light-of-new-threats-and-technology-evolution/[APNIC]
+link:https://blog.apnic.net/2024/07/17/revisiting-ixp-peering-lan-security-in-the-light-of-new-threats-and-technology-evolution[APNIC]
 and
-https://manrs.org/2020/12/ixp-peering-platform-an-environment-to-take-care-of/[MANRS].
+link:https://manrs.org/2020/12/ixp-peering-platform-an-environment-to-take-care-of[MANRS].
 
 [#img-pop,link=https://content.dd-ix.net/blog/assets/]
 image::003_pop.webp[]
@@ -136,7 +136,7 @@ could be exploited by an attacker - it doesn’t matter whether you trust
 your peers or not.
 
 Several incidents in the past (e.g.,
-https://archive.franceix.net//en/events-and-news/news/franceix-outage-notification/[2014],
+https://archive.franceix.net//en/events-and-news/news/franceix-outage-notification[2014],
 https://web.archive.org/web/20160327075404/https://ams-ix.net/newsitems/195[2015],
 https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform[2023])
 give good reasons for zero trust.
@@ -145,7 +145,7 @@ give good reasons for zero trust.
 
 To mitigate risks, we harden each switch port leveraging our switching
 configuration. The ports are configured depending on the
-https://docs.ixpmanager.org/latest/usage/interfaces/#physical-interface-settings[physical port status setting in the _IXP Manager_].
+https://docs.ixpmanager.org/latest/usage/interfaces/#physical-interface-settings[physical port status setting in the IXP Manager].
 We automatically assign the following configuration to all ports
 connecting peers having the status _Connected_:
 
@@ -332,7 +332,7 @@ Alpine Linux has built-in support to
 https://wiki.alpinelinux.org/wiki/Netns#netns-based_Service_Isolation[run daemons inside network namespaces]. 
 We use https://ifstate.net[IfState]
 to have a fully declarative network configuration (disclaimer:
-https://labs.ripe.net/author/liske/[Thomas] is upstream developer of
+https://labs.ripe.net/author/liske[Thomas] is upstream developer of
 IfState). IfState also has native netns support allowing us to configure
 such setup easily (see our
 https://github.com/dd-ix/ddix-ansible-rs/blob/10c7e4d4a2076f1153913801ed940c23eb6c199c/templates/ifstate/config.yml.j2[jinja2 template for /etc/ifstate/config.yml]).
@@ -356,7 +356,7 @@ https://github.com/dd-ix/ddix-ansible-ixp/tree/main/arouteserver[DD-IX Ansible I
 The BIRD configurations are automatically
 rebuilt and activated several times a day to reflect changes of route
 objects,
-https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/[RPKI]
+https://www.ripe.net/manage-ips-and-asns/resource-management/rpki[RPKI]
 material etc.
 
 ==== Transparency is Important
