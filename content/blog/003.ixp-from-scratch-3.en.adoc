@@ -106,6 +106,7 @@ https://blog.apnic.net/2024/07/17/revisiting-ixp-peering-lan-security-in-the-lig
 and
 https://manrs.org/2020/12/ixp-peering-platform-an-environment-to-take-care-of/[MANRS].
 
+[#img-pop,link=https://content.dd-ix.net/blog/assets/]
 image::003_pop.webp[]
 
 That looks like a simple setup, doesn’t it? In reality, however,
@@ -117,6 +118,7 @@ different levels of trustworthiness:
 * different types of L2 backhauls for remote peer routers (not
 trustworthy).
 
+[#img-backhaul,link=https://content.dd-ix.net/blog/assets/]
 image:003_backhaul.webp[]
 
 What could possibly go wrong?
@@ -312,6 +314,7 @@ between netns as required. Our route servers have a bonding link (LAG)
 where the VLANs of the _PoP Management LAN_ and the _Peering LAN_ are
 attached.
 
+[#img-ixp-rs,link=https://content.dd-ix.net/blog/assets/]
 image:003_ixp_rs.webp[]
 
 The _Peering LAN_ subinterface and the BIRD BGP daemon are assigned to
@@ -322,17 +325,17 @@ from the default network namespace (*mw: which is what?*) to manage the
 BIRD daemon running inside the peering netns. This also works for
 monitoring tools such as _birdwatcher_ and _bird_exporter_.
 
+[#img-rs-netns,link=https://content.dd-ix.net/blog/assets/]
 image:003_rs_netns.webp[]
 
 Alpine Linux has built-in support to
-https://wiki.alpinelinux.org/wiki/Netns#netns-based_Service_Isolation[run
-daemons inside network namespaces]. We use https://ifstate.net[IfState]
+https://wiki.alpinelinux.org/wiki/Netns#netns-based_Service_Isolation[run daemons inside network namespaces]. 
+We use https://ifstate.net[IfState]
 to have a fully declarative network configuration (disclaimer:
 https://labs.ripe.net/author/liske/[Thomas] is upstream developer of
 IfState). IfState also has native netns support allowing us to configure
 such setup easily (see our
-https://github.com/dd-ix/ddix-ansible-rs/blob/10c7e4d4a2076f1153913801ed940c23eb6c199c/templates/ifstate/config.yml.j2[jinja2
-template for /etc/ifstate/config.yml]).
+https://github.com/dd-ix/ddix-ansible-rs/blob/10c7e4d4a2076f1153913801ed940c23eb6c199c/templates/ifstate/config.yml.j2[jinja2 template for /etc/ifstate/config.yml]).
 
 === BGP Configuration
 
@@ -349,8 +352,8 @@ framework.
 At DD-IX, we build the basic BIRD configuration of our route servers
 using https://github.com/pierky/arouteserver[ARouteServer] provided by
 Pier Carlo Chiodi. Our configuration of ARouteServer is available in our
-https://github.com/dd-ix/ddix-ansible-ixp/tree/main/arouteserver[DD-IX
-Ansible IXP] repository. The BIRD configurations are automatically
+https://github.com/dd-ix/ddix-ansible-ixp/tree/main/arouteserver[DD-IX Ansible IXP] repository. 
+The BIRD configurations are automatically
 rebuilt and activated several times a day to reflect changes of route
 objects,
 https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/[RPKI]
