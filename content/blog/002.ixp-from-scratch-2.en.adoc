@@ -96,7 +96,7 @@ supports diskless operation. Running the operating system completely in
 RAM brings the following advantages. First, it is more sustainable
 because RAM is less impacted by ageing compared to frequrently used
 disks. Second, any misconfiguration that breaks the system is resolved
-by a reboot since the system does not keep persistant states. These
+by a reboot since the system does not keep persistent states. These
 properties make Alpine Linux well-suited to run network services such as
 routers, route servers, and firewalls. The frequently changing parts of
 the configuration, e.g., BGP configurations, will be loaded during
@@ -107,7 +107,7 @@ runtime to not conflict with an always operational base system.
 Having the two operating environments NixOS and Alpine Linux we still
 need some glue for cross-system automation. For this, we use
 https://docs.ansible.com/[Ansible], which is executed on NixOS to
-repeatly reconfigure our Alpine Linux-based route servers and Arista
+repeatedly reconfigure our Alpine Linux-based route servers and Arista
 EOS-based peering switches.
 
 === Service isolation

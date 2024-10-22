@@ -1,0 +1,404 @@
+---
+published: 2024-09-30
+modified: 2024-09-30
+description: Setup of the Peering Switches and Route Servers
+title: The Peering LAN
+keywords: [ IXP-from-Scratch ]
+authors: [ Thomas Liske, Marcel Koch, Tassilo Tanneberger, Matthias Wählisch ]
+image: 003_ddix_lead_image.webp
+---
+
+[width="5%",cols="100%",]
+|===
+|In the third article of our series “IXP from Scratch”, we discuss our
+setup of the peering switches and route servers at
+`DD-IX <https://dd-ix.net>`__, an Internet Exchange located in the city
+of Dresden, Germany. We explain how we connect our two PoPs and which
+security and safety mechanisms (L2 and L3) we configured to ensure
+reliable operation.
+|===
+
+In this article, we start with explaining the configuration of our
+switching infrastructure using common IETF protocols to implement
+redundancy, full usage of resources, and seamless adaptivity in case of
+failures or maintenance. We then continue presenting the configuration
+of our route servers with a special focus on isolating different LANs
+and dynamically exclude invalid routes.
+
+== Building Bridges
+
+Our switching infrastructure consists of two Arista DCS-7050SX switches
+donated by third parties (thanks again!). Each switch serves one PoP.
+Both switches are connected via two CWDM-based 10G links.
+
+Right from the beginning, we aim for scalability that allows us to
+easily expand our IX to connect additional switches and PoPs later
+without sacrificing fault tolerance and resource sharing. Combining
+plain Ethernet, link aggregation, and spanning tree might work for small
+LANs with few switches, but would become a major challenge in larger
+deployments since convergence in case of topology changes is slow and
+flexibility to steer packet forwarding is limited. A key feature of this
+classic approach, however, is that it is based on open standards and a
+distributed control plane – features that are also very important to us.
+Consequently, any ``<Your vendor building bridges>`` *Software Defined
+Lock-in* solution would not work for us either.
+
+In the following, we describe our setup based on `MP-BGP EVPN
+(Multiprotocol BGP Ethernet VPN) <https://doi.org/10.17487/RFC7432>`__
+on top of `VxLAN (Virtual Extensible
+LAN) <https://doi.org/10.17487/RFC7348>`__, both defined by the IETF.
+
+=== Setup a Fabric
+
+We need various broadcast domains which are implemented on the switching
+hardware as common VLANs:
+
+-  the peering (V)LAN in which peers get connected.
+-  quarantine VLAN for the assessment of new peers.
+-  management VLAN since we do not have a out-of-band management, yet.
+
+Typically, large broadcast domains do not scale since unknown MAC
+addresses lead to larger flooding, even in switched environments. Using
+VXLAN and EVPN we can tunnel layer 2 traffic via an IP network, enabling
+coherent L2 domains without spanning a VLAN across all switches. Using a
+multiprotocol routing protocol allows us to provision MAC addresses via
+unicast and to balance traffic across multiple ports in parallel.
+
+Our EVPN setup uses an IGP in the underlay and full “meshed” iBGP
+sessions between the loopback interfaces of our two switches. Instead of
+the complex OSPF monster, we choose IS-IS as IGP.
+
+=== Bundle Resources: To LAG or not to LAG?
+
+We do not use any Link Aggregations (LAGs) for the underlay ports but
+deploy *Equal-Cost Multi-Path* (ECMP) routing. Running a routing session
+on each individual link instead of aggregating links on layer 2 brings
+various advantages:
+
+1. Links can be released from traffic by disabling the individual
+   routing session. This allows link maintenances with zero packet loss
+   since the routing protocol will gradually move the traffic instead of
+   abruptly turn off ports.
+2. Reconfigurations or even replacing the IGP of the underlay is
+   possible without traffic disruption in the overlay.
+3. BFD is performed independently on each link.
+
+=== Detecting Errors: To BFD or not to BFD?
+
+To quickly detect link errors in the underlay, we use `Bidirectional
+Forwarding Detection (BFD) <https://doi.org/10.17487/RFC5880>`__ on all
+underlay ports. This allows us to reduce IGP convergence times to a
+minimum without tuning any routing protocol default timers.
+
+We do not use BFD for MP-BGP EVPN, though, because a router interface
+attached to a switch ports in the Peering LAN is not able to move, they
+are virtually static. If one of our PoP switches fails or get isolated,
+it does not make it any better to quickly remove the MAC addresses of
+unreachable ports from the EVPN.
+
+=== Protecting the Peering LAN
+
+The most challenging part of setting up our switches is to protect the
+*Peering LAN* to which the routers of our peers are connected to, see
+also
+`APNIC <https://blog.apnic.net/2024/07/17/revisiting-ixp-peering-lan-security-in-the-light-of-new-threats-and-technology-evolution/>`__
+and
+`MANRS <https://manrs.org/2020/12/ixp-peering-platform-an-environment-to-take-care-of/>`__.
+
+image::003_pop.webp[]
+
+That looks like a simple setup, doesn’t it? In reality, however,
+different types of remote stations are connected to this VLAN with
+different levels of trustworthiness:
+
+-  our route servers (very trustworthy).
+-  directly connected peer routers (trustworthy).
+-  different types of L2 backhauls for remote peer routers (not
+   trustworthy).
+
+|image:003_backhaul.webp[]
+
+What could possibly go wrong?
+
+1. The Peering LAN is just a bridge and all peering ports with L2
+   backhauls are building a large carrier-spanning (country-spanning?
+   continent-spanning? …) broadcast domain. 🥂 No one has the intention
+   to build a loop!
+
+2. Every router in the Peering LAN can (unintentionally) be disruptive
+   by using incorrect layer 2 or layer 3 addresses, doing `Proxy
+   ARP <https://www.euro-ix.net/media/filer_public/3e/cb/3ecb9c73-a7f3-4771-bd28-d2e6e0abd97e/2021-09-proxy_arp_detection_at_an_ixp.pdf>`__  , or doing other weird things.
+
+3. Even if you trust your peers, there is still a risk that a router
+   could be exploited by an attacker - it doesn’t matter whether you
+   trust your peers or not.
+
+Several incidents in the past (e.g.,
+`2014 <https://archive.franceix.net//en/events-and-news/news/franceix-outage-notification/>`__,
+`2015 <https://web.archive.org/web/20160327075404/https://ams-ix.net/newsitems/195>`__,
+`2023 <https://www.ams-ix.net/ams/outage-on-amsterdam-peering-platform>`__)
+give good reasons for zero trust.
+
+=== Peering Ports Basics
+
+To mitigate risks, we harden each switch port leveraging our switching
+configuration. The ports are configured depending on the `physical port
+status setting in the IXP
+Manager <https://docs.ixpmanager.org/latest/usage/interfaces/#physical-interface-settings>`__.
+
+We automatically assign the following configuration to all ports
+connecting peers having the status *Connected*:
+
+.. code:: perl
+
+   interface Ethernet11
+      description PEER AS65372 peer1
+      switchport access vlan 600
+      ip access-group peer-eth11-ipv4 in
+      ipv6 access-group peer-eth11-ipv6 in
+      mac access-group peer-eth11 in
+      no lldp transmit
+      no lldp receive
+      sflow enable
+      storm-control broadcast level 0.01
+      storm-control multicast level 0.01
+      storm-control unknown-unicast level 0.01
+
+This configuration limits Broadcast, unknown-unicast and multicast (BUM)
+traffic to prevent packet storms from external networks into our fabric.
+On each peering port, we use ingress sFlow sampling to build traffic
+statistics. We also apply the following inbound ACLs at layer 2 and
+layer 3:
+
+.. code:: perl
+
+   mac access-list peer-eth11
+      10 remark AS65372 allow arp broadcast
+      11 permit vlan 600 0x000 00:53:42:8b:7b:20 00:00:00:00:00:00 ff:ff:ff:ff:ff:ff 00:00:00:00:00:00 arp
+      20 remark AS65372 allow nd multicast
+      21 permit vlan 600 0x000 00:53:42:8b:7b:20 00:00:00:00:00:00 33:33:ff:00:00:00 00:00:00:ff:ff:ff ipv6
+      30 remark AS65372 drop other broadcasts or multicasts
+      31 deny vlan 600 0x000 any 01:00:00:00:00:00 fe:ff:ff:ff:ff:ff log
+      40 remark AS65372 allow lan access
+      41 permit vlan 600 0x000 00:53:42:8b:7b:20 00:00:00:00:00:00 any arp
+      42 permit vlan 600 0x000 00:53:42:8b:7b:20 00:00:00:00:00:00 any ip
+      43 permit vlan 600 0x000 00:53:42:8b:7b:20 00:00:00:00:00:00 any ipv6
+      100 remark AS65372 drop any
+      101 deny any any log
+   ! …
+   mac address-table static 0053.428b.7b20 vlan 600 interface Ethernet11
+
+The layer 2 ACL allows *IPv6 Neighbor Discovery* multicasts, *IPv4 ARP*
+broadcasts but no other layer 2 non-unicast traffic. Furthermore, only
+packets of the *EtherType* IPv6, IPv4, and ARP are allowed to enter
+these ports: `sorry OSI, you shall not
+pass <https://en.wikipedia.org/wiki/Protocol_Wars#Internet%E2%80%93OSI_Standards_War>`__.
+
+We *require* that all peers use only a single static MAC address on
+their peering ports, and add a corresponding static MAC address-table
+entry.
+
+.. code:: perl
+
+   ipv6 access-list peer-eth11-ipv6
+      10 remark AS15372 IPv6 multicast (RFC 5963)
+      11 permit ipv6 any host ff02::1
+      12 permit ipv6 any host ff02::2
+      13 permit ipv6 any host ff02::16
+      14 permit ipv6 any ff02::1:ff00:0/104
+      15 deny ipv6 any ff00::/8 log
+      20 remark AS65372 allow router IPv6
+      21 permit vlan 600 0x000 ipv6 host 2001:db8:79::3c0c:1 any
+      30 remark AS65372 deny IPv6 abuse
+      31 deny vlan 600 0x000 ipv6 2001:db8:79::/64 2001:db8:79::/64 log
+      100 remark allow any other traffic
+      101 permit ipv6 any any
+   ! …
+   ip access-list peer-eth11-ipv4
+      10 remark AS65372 allow router IP
+      11 permit vlan 600 0x000 ip host 198.51.100.71 any
+      20 remark AS65372 deny IP abuse
+      21 deny vlan 600 0x000 ip 198.51.100.64/26 198.51.100.64/26 log
+      100 remark allow any other traffic
+      101 permit ip any any
+
+=== Filtering IPv6 Peering Addresses is Specifically Challenging
+
+The layer 3 ACLs are used to block peers from using an IP address not
+assigned to them. In IPv4, this is straightforward since we assign
+peering LAN IP addresses to peers, supported by the IXP Manager. In IPv6,
+this is less obvious because of link-local addresses. First, the IXP
+Manager does not allow to manage (static) link-local addresses. Second,
+autoconfigured link-local addresses require dedicated monitoring to
+discover them. What we would like to see in the future are common rules
+about the configuration of link-local IPv6 addresses in IXP peering
+LANs, which ultimately will ease IP filtering.
+
+We have link-local multicast filters following `RFC 5963 - IPv6
+Deployment in Internet Exchange Points
+(IXPs) <https://datatracker.ietf.org/doc/html/rfc5963>`__. This also
+serves to suppress incorrectly configured router advertisements.
+
+=== Configurations May Include Features that are not Available
+
+We are aware that the hardware of our switches (Trident2 BCM56850
+series) does not support the outer VLAN option in any ACL. Not every
+setting visible in the active configuration is actually effective – a
+common “feature” of many switch vendors using generic software images.
+
+This is dangerous because although the configuration on different switch
+models is syntactically correct, it may (surprisingly) have different
+semantics! And depending on how the ACL is written, it can behave fail
+open or fail close. 😖
+
+Also be careful when replacing the switch in the event of a failure or
+when upgrading to a new model - your ACLs might have a different
+semantics.
+
+=== Be Prepared for Maintenances
+
+It is necessary to do maintenance on switches from time to time. We use
+“involuntary BGP session teardown” according to `RFC 8327 - BGP session
+culling <https://datatracker.ietf.org/doc/html/rfc8327#section-3.2>`__
+to disable traffic forwarding on a single switch for maintenance. This
+is implemented by inserting additional access control entries (ACE) at
+the top of the peer ACLs during maintenance:
+
+.. code:: perl
+
+   ipv6 access-list peer-eth11-ipv6
+      5 deny tcp 2001:db8:79::/64 eq bgp 2001:db8:79::/64
+      6 deny tcp 2001:db8:79::/64 2001:db8:79::/64 eq bgp
+      ! …
+   ! …
+   ip access-list peer-eth11-ipv4
+      5 deny tcp 198.51.100.64/26 eq bgp 198.51.100.64/26
+      6 deny tcp 198.51.100.64/26 198.51.100.64/26 eq bgp
+      ! …
+
+This intentionally breaks any BGP session between the peers and our
+route servers **and** all direct peerings to other peers in the peering
+LAN on the switch in maintenance. BGP sessions that do not terminate on
+the switch under maintenance continue to work, though.
+
+When the maintenance is completed, these ACEs will be removed and the
+BGP sessions recover. This allows us to do (emergency) maintenances
+without directly interacting with all affected peers.
+
+== Route Servers
+
+Our route servers run on dedicated hardware `Alpine
+Linux <https://alpinelinux.org>`__ in `diskless
+mode <https://wiki.alpinelinux.org/wiki/Installation#Diskless_Mode>`__
+allowing for robust operation, see `prior RIPE Labs
+article <https://labs.ripe.net/author/liske/ixp-from-scratch-network-and-security-design/>`__.
+We use a single `bird2 <https://bird.network.cz/>`__ instance as routing
+daemon.
+
+=== Isolate the Peering LAN
+
+The route servers are connected to the management LAN and the peering
+LAN. For security reasons, it is important that network packets are
+never routed between those networks. Deploying firewall rules is the
+first step but not sufficient. We also need to tune ARP responses and
+other settings of the Linux kernel to achieve full isolation.
+
+The Linux kernel provides a lightweight built-in solution to implement
+partitioning of kernel resources such as user IDs, file system,
+processes, or the network stack. So called `network namespaces
+(netns) <https://man7.org/linux/man-pages/man8/ip-netns.8.html#DESCRIPTION>`__
+enable the creation of partitions with their own isolated IP routing
+configuration. Processes and interfaces can be moved between netns as
+required. Our route servers have a bonding link (LAG) where the VLANs of
+the *PoP Management LAN* and the *Peering LAN* are attached.
+
+image:003_ixp_rs.webp[]
+
+The *Peering LAN* subinterface and the BIRD BGP daemon are assigned to
+the ``peering`` network namespace. While network namespaces in Linux
+provide a hard isolation for any IP-based connection, it does **not**
+affect *UNIX domain sockets*. So we can still use the BIRD CLI ``birdc``
+from the default network namespace (**mw: which is what?**) to manage
+the BIRD daemon running inside the peering netns. This also works for
+monitoring tools such as *birdwatcher* and *bird_exporter*.
+
+image:003_rs_netns.webp[]
+
+Alpine Linux has built-in support to `run daemons inside network
+namespaces <https://wiki.alpinelinux.org/wiki/Netns#netns-based_Service_Isolation>`__.
+We use `IfState <https://ifstate.net>`__ to have a fully declarative
+network configuration (disclaimer:
+`Thomas <https://labs.ripe.net/author/liske/>`__ is upstream developer
+of IfState). IfState also has native netns support allowing us to
+configure such setup easily (see our `jinja2 template for
+/etc/ifstate/config.yml <https://github.com/dd-ix/ddix-ansible-rs/blob/10c7e4d4a2076f1153913801ed940c23eb6c199c/templates/ifstate/config.yml.j2>`__).
+
+== BGP Configuration
+
+The BGP configuration of IXP route servers must prevent the distribution
+of incorrect routing information between peers. `RFC
+7947 <https://datatracker.ietf.org/doc/html/rfc7947>`__ and `RFC
+7948 <https://datatracker.ietf.org/doc/html/rfc7948>`__ provide a good
+overview of important requirements. Instead of implementing policies to
+ignore invalid routes from scratch, we use a well-known and tested
+framework.
+
+=== Exclude Invalid Routes from Advertisement
+
+At DD-IX, we build the basic BIRD configuration of our route servers
+using `ARouteServer <https://github.com/pierky/arouteserver>`__ provided
+by Pier Carlo Chiodi. Our configuration of ARouteServer is available in
+our `DD-IX Ansible
+IXP <https://github.com/dd-ix/ddix-ansible-ixp/tree/main/arouteserver>`__
+repository. The BIRD configurations are automatically rebuilt and
+activated several times a day to reflect changes of route objects,
+`RPKI <https://www.ripe.net/manage-ips-and-asns/resource-management/rpki/>`__
+material etc.
+
+== Transparency is Important
+
+Debugging in case of errors, unexpected behavior etc. requires full
+transparency into the configuration of our route severs. To make most
+recent configurations available to our peers, we use the built-in
+feature of *ARouteServer* to create a textual representation of the
+route server options and policies, and publish the output automatically
+on our `website <https://dd-ix.net/en/network/route-server>`__.
+
+== IPv4 Prefixes and an IPv6 Next Hop?
+
+`RFC 8950 <https://datatracker.ietf.org/doc/html/rfc8950>`__ defines the
+option to advertise IPv4 prefixes with an IPv6 Next Hop. This feature is
+supported by *ARouteServer*. Although this feature seems not to be
+provided by many IXPs, yet, we decided to try this feature in our
+greenfield setup. Unfortunately, we had to deactivate it for now because
+it conflicts with our monitoring setup.
+
+== Conclusions
+
+We would like to emphasize the following take-aways.
+
+1. Running a larger switching infrastructure that is allows for fast
+   failovers and use available resources flexibly, is more than
+   deploying link aggregation and spanning tree. There is no need,
+   however, for proprietary solutions. Open IETF technologies for
+   virtualization perfectly work.
+
+2. Securing your peering LAN is a must but it also introduces
+   complexity, especially when it comes to debugging L3 filters. In our
+   next article, we will describe how we generate our configurations and
+   ACLs.
+
+3. `RFC 8950 <https://datatracker.ietf.org/doc/rfc8950/>`__ still has
+   some issues that hinder its use, mainly because software such as the
+   Alice Looking Glass do not support integration.
+
+4. A route server should not propagate any route advertised by a peer.
+   Tools are available to compile a list of invalid routes, but it also
+   requires input from operators – create RPKI ROAs (and filter) ;)!
+
+5. IPv6 introduce special consideration of link-local addresses.
+   Currently, our community does not have a clear understanding which
+   addressing scheme should be used. This, however, is a requirement for
+   the creation of filter rules. We hope that this will be clarified
+   among IXPs in the future.
+
