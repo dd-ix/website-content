@@ -119,7 +119,7 @@ different levels of trustworthiness:
 trustworthy).
 
 [#img-backhaul,link=https://content.dd-ix.net/blog/assets/]
-image:003_backhaul.webp[]
+image::003_backhaul.webp[]
 
 What could possibly go wrong?
 
@@ -315,7 +315,7 @@ where the VLANs of the _PoP Management LAN_ and the _Peering LAN_ are
 attached.
 
 [#img-ixp-rs,link=https://content.dd-ix.net/blog/assets/]
-image:003_ixp_rs.webp[]
+image::003_ixp_rs.webp[]
 
 The _Peering LAN_ subinterface and the BIRD BGP daemon are assigned to
 the `+{peering}+` network namespace. While network namespaces in Linux
@@ -326,7 +326,7 @@ BIRD daemon running inside the peering netns. This also works for
 monitoring tools such as _birdwatcher_ and _bird_exporter_.
 
 [#img-rs-netns,link=https://content.dd-ix.net/blog/assets/]
-image:003_rs_netns.webp[]
+image::003_rs_netns.webp[]
 
 Alpine Linux has built-in support to
 https://wiki.alpinelinux.org/wiki/Netns#netns-based_Service_Isolation[run daemons inside network namespaces]. 
