@@ -125,7 +125,7 @@ virtualisation overhead.
 
 
 [#img-microvm-nix,link=https://content.dd-ix.net/blog/assets/]
-image::002_microvm_nix_store.webp[]
+image::002_microvm_nix_store.svg[]
 
 At https://dd-ix.net[DD-IX], we decided to use https://nixos.org/[NixOS]
 with https://github.com/astro/microvm.nix[Astro’s microvm.nix]. This
