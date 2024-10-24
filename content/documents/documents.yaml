@@ -19,7 +19,7 @@ de:
     description: ''
     filename: DD-IX_Foerdermitgliedsantrag.pdf
     image: DD-IX_Foerdermitgliedsantrag.webp
-  - name: TermsofService
+  - name: Terms of Service
     description: ''
     filename: DD-IX_TermsofService.pdf
     image: DD-IX_TermsofService.webp
@@ -44,7 +44,7 @@ en:
     description: ''
     filename: DD-IX_Foerdermitgliedsantrag.pdf
     image: DD-IX_Foerdermitgliedsantrag.webp
-  - name: TermsofService
+  - name: Allgemeine Geschäftsbedingungen
     description: ''
     filename: DD-IX_TermsofService.pdf
     image: DD-IX_TermsofService.webp
