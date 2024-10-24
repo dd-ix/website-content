@@ -107,7 +107,7 @@ and
 link:https://manrs.org/2020/12/ixp-peering-platform-an-environment-to-take-care-of[MANRS].
 
 [#img-pop,link=https://content.dd-ix.net/blog/assets/]
-image::003_pop.webp[]
+image::003_pop.svg[]
 
 That looks like a simple setup, doesn’t it? In reality, however,
 different types of remote stations are connected to this VLAN with
@@ -119,7 +119,7 @@ different levels of trustworthiness:
 trustworthy).
 
 [#img-backhaul,link=https://content.dd-ix.net/blog/assets/]
-image::003_backhaul.webp[]
+image::003_backhaul.svg[]
 
 What could possibly go wrong?
 
@@ -315,7 +315,7 @@ where the VLANs of the _PoP Management LAN_ and the _Peering LAN_ are
 attached.
 
 [#img-ixp-rs,link=https://content.dd-ix.net/blog/assets/]
-image::003_ixp_rs.webp[]
+image::003_ixp_rs.svg[]
 
 The _Peering LAN_ subinterface and the BIRD BGP daemon are assigned to
 the `+{peering}+` network namespace. While network namespaces in Linux
