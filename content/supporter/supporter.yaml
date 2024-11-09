@@ -2,6 +2,7 @@ supporting_peers:
   - 15372
   - 16205
   - 62365
+  - 51224
 supporters:
-  - name: "NETD@TUD"
-    url: "https://netd.cs.tu-dresden.de"
+  #- name: "NETD@TUD"
+  #  url: "https://netd.cs.tu-dresden.de"
