@@ -28,15 +28,18 @@ favour providers who offer exclusively open source-based solutions.
 
 The most important services are currently,
 
-*to manage IXP services* 
+*to manage IXP services*
+
 * *IXP Manager* - that was to be expected, wasn’t it? 
 * *Alice-LG* - our friendly looking glass for the route servers
 
-*to manage our network* 
+*to manage our network*
+
 * *Netbox* - as IPAM and DCIM solution, *not* used for automation 
 * *Grafana* & *Prometheus* - for observability and alerting
 
 *to manage our daily office work*
+
 * *Nextcloud* - with OnlyOffice and draw.io integration 
 * *Vaultwarden* - our password manager 
 * *Mailman3*
