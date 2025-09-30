@@ -1,0 +1,6 @@
+- name: Debian
+  url: https://ftp.agdsn.de/debian/
+  operator: AGDSN (TU Dresden)
+- name: Debian
+  url: https://mirrors.ibh.net/debian/
+  operator: IBH IT-Service GmbH
