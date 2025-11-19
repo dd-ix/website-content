@@ -59,6 +59,18 @@
     mastodon: "@m4rc3l@c3d2.social"
     github: "MarcelCoding"
     email: "marcel.koch@dd-ix.net"
+- name: "Alexander Kiontke"
+  vorstand: True
+  working_groups: [ "Tech", "Network"]
+  ripe_handle: "AK23719-RIPE"
+  description:
+    de: "Vorstand"
+    en: "Association Board Member"
+  image: "AlexanderKiontke.webp"
+  socials:
+    mastodon: "@akiontke@mastodon.social"
+    email: "alexander.kiontke@dd-ix.net"
+    linkedin: "alexander-kiontke-438784129"
 - name: "Matthias Wählisch"
   working_groups: [ "Tech", "Network" ]
   vorstand: False
