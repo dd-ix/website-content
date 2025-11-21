@@ -1,10 +1,10 @@
 - name: "Tassilo Tanneberger"
   vorstand: True
-  working_groups: [ "Tech", "DevOps"]
+  working_groups: [ "Tech", "DevOps", "Network"]
   ripe_handle: "TASS5-RIPE"
   description:
-    de: "Vorstand"
-    en: "Association Board Member"
+    de: "Vorstandvorsitzender"
+    en: "Chair of the Board"
   image: "TassiloTanneberger.webp"
   socials:
     website: "https://tanneberger.me"
