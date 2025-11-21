@@ -1,26 +1,3 @@
-- name: "Melody Sofia Eroshevich"
-  vorstand: True
-  working_groups: [ "Tech", "Services"]
-  ripe_handle: "MLDY1-RIPE"
-  description:
-    de: "Vorstandsvorsitz"
-    en: "Association Board Chair"
-  image: "Melody.webp"
-  socials:
-    mastodon: "@melody@c3d2.social"
-    github: "neonwhiskers"
-    email: "melody.eroshevich@dd-ix.net"
-    linkedin: "melody-sofia-e-62a101209"
-- name: "Sandra Zander"
-  vorstand: True
-  working_groups: [ "Events", "FinanceAndLegal" ]
-  description:
-    de: "Finanzen- und Verwaltungsvorstand"
-    en: "Financial and Administrative Board"
-  image: "SandraZander.webp"
-  socials:
-    email: "sandra.zander@dd-ix.net"
-    linkedin: "sandra-zander"
 - name: "Tassilo Tanneberger"
   vorstand: True
   working_groups: [ "Tech", "DevOps"]
@@ -35,30 +12,16 @@
     github: "tanneberger"
     email: "tassilo.tanneberger@dd-ix.net"
     linkedin: "tassilo-tanneberger-725551292"
-- name: "Thomas Liske"
+- name: "Sandra Zander"
   vorstand: True
-  working_groups: [ "Tech", "Network" ]
-  ripe_handle: "LISK3-RIPE"
+  working_groups: [ "Events", "FinanceAndLegal" ]
   description:
-    de: "Vorstand"
-    en: "Association Board Member"
-  image: "ThomasLiske.webp"
+    de: "Finanzen- und Verwaltungsvorstand"
+    en: "Financial and Administrative Board"
+  image: "SandraZander.webp"
   socials:
-    mastodon: "@liske@ibh.social"
-    github: "liske"
-    email: "thomas.liske@dd-ix.net"
-- name: "Marcel Koch"
-  vorstand: True
-  working_groups: [ "Tech", "DevOps"]
-  description:
-    de: "Vorstand"
-    en: "Association Board Member"
-  image: "MarcelKoch.webp"
-  socials:
-    #website: "https://m4rc3l.de"
-    mastodon: "@m4rc3l@c3d2.social"
-    github: "MarcelCoding"
-    email: "marcel.koch@dd-ix.net"
+    email: "sandra.zander@dd-ix.net"
+    linkedin: "sandra-zander"
 - name: "Alexander Kiontke"
   vorstand: True
   working_groups: [ "Tech", "Network"]
@@ -71,6 +34,44 @@
     mastodon: "@akiontke@mastodon.social"
     email: "alexander.kiontke@dd-ix.net"
     linkedin: "alexander-kiontke-438784129"
+- name: "Marcel Koch"
+  vorstand: True
+  working_groups: [ "Tech", "DevOps"]
+  description:
+    de: "Vorstand"
+    en: "Association Board Member"
+  image: "MarcelKoch.webp"
+  socials:
+    #website: "https://m4rc3l.de"
+    mastodon: "@m4rc3l@c3d2.social"
+    github: "MarcelCoding"
+    email: "marcel.koch@dd-ix.net"
+- name: "Thomas Liske"
+  vorstand: True
+  working_groups: [ "Tech", "Network" ]
+  ripe_handle: "LISK3-RIPE"
+  description:
+    de: "Vorstand"
+    en: "Association Board Member"
+  image: "ThomasLiske.webp"
+  socials:
+    mastodon: "@liske@ibh.social"
+    github: "liske"
+    email: "thomas.liske@dd-ix.net"
+- name: "Melody Sofia Eroshevich"
+  vorstand: False
+  working_groups: [ "Tech", "Services"]
+  ripe_handle: "MLDY1-RIPE"
+  description:
+    de: "Gründer"
+    en: "Founder"
+  image: "Melody.webp"
+  socials:
+    mastodon: "@melody@c3d2.social"
+    github: "neonwhiskers"
+    email: "melody.eroshevich@dd-ix.net"
+    linkedin: "melody-sofia-e-62a101209"
+
 - name: "Matthias Wählisch"
   working_groups: [ "Tech", "Network" ]
   vorstand: False
@@ -93,6 +94,16 @@
   image: "ThomasKalz.webp"
   socials:
     email: "thomas.kalz@dd-ix.net"
+- name: "Tim Koop"
+  working_groups: ["Tech", "Network"]
+  vorstand: False
+  description: 
+    de: "Engagierter Netzwerker"
+    en: "Engaged Network Engineer"
+  image: "TimKoop.webp"
+  socials:
+    email: "tim.koop@dd-ix.net"
+    github: cyanPaperclip
 - name: "André Grüneberg"
   working_groups: [ "Tech", "Network" ]
   vorstand: False
