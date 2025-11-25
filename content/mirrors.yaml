@@ -1,6 +1,36 @@
+- name: Alpine
+  url: https://mirrors.ibh.net/alpine/
+  operator: IBH IT-Service GmbH
+- name: Almalinux
+  url: https://ftp.agdsn.de/almalinux/
+  operator: AGDSN (TU Dresden)
+- name: Arch
+  url: https://ftp.agdsn.de/archlinux/
+  operator: AGDSN (TU Dresden)
+- name: Debian
+  url: https://ftp.debian.de
+  operator: Chair for Operating Systems (TU Dresden)
 - name: Debian
   url: https://ftp.agdsn.de/debian/
   operator: AGDSN (TU Dresden)
 - name: Debian
   url: https://mirrors.ibh.net/debian/
   operator: IBH IT-Service GmbH
+- name: Fedora
+  url: https://ftp.agdsn.de/fedora/
+  operator: AGDSN (TU Dresden)
+- name: Manjaro
+  url: https://ftp.agdsn.de/manjaro/
+  operator: AGDSN (TU Dresden)
+- name: Gentoo
+  url: https://ftp.agdsn.de/gentoo/
+  operator: AGDSN (TU Dresden)
+- name: Ubuntu
+  url: https://ftp.agdsn.de/ubuntu/
+  operator: AGDSN (TU Dresden)
+- name: Ubuntu
+  url: https://mirrors.ibh.net/ubuntu/
+  operator: IBH IT-Service GmbH
+- name: OpenBSD
+  url: https://ftp.agdsn.de/openbsd/
+  operator: AGDSN (TU Dresden)
