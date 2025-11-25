@@ -8,7 +8,7 @@
   url: https://ftp.agdsn.de/archlinux/
   operator: AGDSN (TU Dresden)
 - name: Debian
-  url: https://ftp.debian.de
+  url: http://ftp.de.debian.org
   operator: Chair for Operating Systems (TU Dresden)
 - name: Debian
   url: https://ftp.agdsn.de/debian/
