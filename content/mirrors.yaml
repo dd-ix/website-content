@@ -25,6 +25,9 @@
 - name: Gentoo
   url: https://ftp.agdsn.de/gentoo/
   operator: AGDSN (TU Dresden)
+- name: RouterKit OS
+  url: https://mirrors.ibh.net/rkos/
+  operator: IBH connect GmbH
 - name: Ubuntu
   url: https://ftp.agdsn.de/ubuntu/
   operator: AGDSN (TU Dresden)
